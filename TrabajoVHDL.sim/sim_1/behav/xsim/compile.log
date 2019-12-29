@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr_tb'

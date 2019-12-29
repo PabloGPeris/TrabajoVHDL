@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 29 21:15:04 2019
+# Process ID: 22172
+# Current directory: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim/xsim.dir/big_cntr_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/pablo/Documents/UNIVERSIDAD/Semestre -notrace
+couldn't read file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 21:15:04 2019...

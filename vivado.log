@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 29 18:55:39 2019
+# Process ID: 20440
+# Current directory: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9276 C:\Users\pablo\Documents\UNIVERSIDAD\Semestre 7\Sistemas Electronicos Digitales\TrabajoVHDL\TrabajoVHDL\TrabajoVHDL.xpr
+# Log file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/vivado.log
+# Journal file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL'
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/new/MiPack.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/imports/new/Mux_7s.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/practica_3/practica_3.srcs/sources_1/new/clk_divider.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/sec_cntr.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 878.391 ; gain = 40.844
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/new/MiPack.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/imports/new/Mux_7s.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/practica_3/practica_3.srcs/sources_1/new/clk_divider.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/sec_cntr.vhd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/new/MiPack.vhd} {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/Prueba7/Prueba7.srcs/sources_1/imports/new/Mux_7s.vhd} {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/imports/Vivado/practica_3/practica_3.srcs/sources_1/new/clk_divider.vhd} {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/sec_cntr.vhd}}
+add_files -norecurse {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd} {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd} {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd} w ]
+add_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd} w ]
+add_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd}}
+update_compile_order -fileset sources_1
+set_property top big_cntr [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/sec_and_dec_cntr_tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/sec_and_dec_cntr_tb.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd}}
+WARNING: [filemgmt 56-12] File 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {1min 20sec} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.log_all_signals} -value {true} -objects [get_filesets sim_1]
+set_property -name {xsim.simulate.no_quit} -value {true} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'big_cntr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj big_cntr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xelab -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.mipack
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr [big_cntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr_tb
+Built simulation snapshot big_cntr_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/pablo/Documents/UNIVERSIDAD/Semestre -notrace
+couldn't read file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 29 21:14:27 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "big_cntr_tb_behav -key {Behavioral:sim_1:Functional:big_cntr_tb} -tclbatch {big_cntr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source big_cntr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 1min 20sec
+ERROR: [Simtcl 6-19] Time value contains a unit and the parameter unit was also set. Only use one method to set the unit.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'big_cntr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1min 20sec
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 878.391 ; gain = 0.000
+set_property -name {xsim.simulate.runtime} -value {120 s} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'big_cntr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj big_cntr_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xelab -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "big_cntr_tb_behav -key {Behavioral:sim_1:Functional:big_cntr_tb} -tclbatch {big_cntr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source big_cntr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 120 s
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'big_cntr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 120 s
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 878.391 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'big_cntr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj big_cntr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xelab -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.mipack
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr [big_cntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr_tb
+Built simulation snapshot big_cntr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "big_cntr_tb_behav -key {Behavioral:sim_1:Functional:big_cntr_tb} -tclbatch {big_cntr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source big_cntr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 120 s
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'big_cntr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 120 s
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 878.391 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'big_cntr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj big_cntr_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generic_cntr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'big_cntr_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+"xelab -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot big_cntr_tb_behav xil_defaultlib.big_cntr_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package xil_defaultlib.mipack
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=10)\]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr [big_cntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.big_cntr_tb
+Built simulation snapshot big_cntr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "big_cntr_tb_behav -key {Behavioral:sim_1:Functional:big_cntr_tb} -tclbatch {big_cntr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source big_cntr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# log_wave -r /
+# run 120 s
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'big_cntr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 120 s
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 924.977 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: big_cntr
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1338.387 ; gain = 174.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:14]
+	Parameter state_num bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntr0' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+	Parameter state_num bound to: 10 - type: integer 
+WARNING: [Synth 8-614] signal 'load_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
+WARNING: [Synth 8-614] signal 'ce_n' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'generic_cntr' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+	Parameter state_num bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:47]
+	Parameter state_num bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntr2' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'generic_cntr__parameterized2' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+	Parameter state_num bound to: 6 - type: integer 
+WARNING: [Synth 8-614] signal 'load_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
+WARNING: [Synth 8-614] signal 'ce_n' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'generic_cntr__parameterized2' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+	Parameter state_num bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:47]
+	Parameter state_num bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'big_cntr' (2#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:14]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.203 ; gain = 238.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.203 ; gain = 238.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1402.203 ; gain = 238.527
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1513.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1519.168 ; gain = 355.492
+15 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1519.168 ; gain = 591.938
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 29 21:45:52 2019...

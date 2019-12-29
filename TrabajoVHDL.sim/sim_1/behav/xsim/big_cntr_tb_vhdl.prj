@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" \
+
+# Do not sort compile order
+nosort
