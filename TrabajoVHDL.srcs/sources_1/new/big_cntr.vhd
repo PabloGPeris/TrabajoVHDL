@@ -6,8 +6,9 @@ entity big_cntr is
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable
            load: in STD_LOGIC;
-           load_v : in cntr_state;
-           state_out : out cntr_state;--estados de salida
+           load_v : in cntr_state_t;
+           
+           state_out : out cntr_state_t;--estados de salida
            rdy_out : out STD_LOGIC);
 end big_cntr;
 
@@ -60,6 +61,6 @@ begin
     
     
    
-    rdy_out <= rdy(0) and rdy(1) and rdy(2) and rdy(3) and rdy(4);
+    rdy_out <= rdy(4);
 
 end Behavioral;

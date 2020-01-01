@@ -2,10 +2,10 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec 28 18:43:53 2019
-# Process ID: 18416
+# Start of session at: Wed Jan  1 14:17:40 2020
+# Process ID: 5316
 # Current directory: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim/xsim.dir/sec_and_dec_cntr_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim/xsim.dir/big_cntr_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
