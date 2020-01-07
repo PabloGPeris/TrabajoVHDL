@@ -6,9 +6,10 @@ package MiPack is
     --------------------
     --tipos y subtipos--
     --------------------
-    type disp_reg_t is array(7 downto 0) of std_logic_vector(7 downto 0);
+    type disp_reg_t is array(3 downto 0) of std_logic_vector(7 downto 0);
     subtype integer10 is natural range 0 to 9;
     type cntr_state_t is array(4 downto 0) of integer10;
+    
     
     ---------------
     --componentes--
@@ -45,6 +46,7 @@ package MiPack is
     
     component FSM_Main is
     Port ( reset : in STD_LOGIC;
+           start : in STD_LOGIC;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
            clk : in STD_LOGIC;
@@ -55,6 +57,24 @@ package MiPack is
            disp_state2 : out cntr_state_t;
            fin : out std_logic
            );
+    end component;
+    
+    
+    component Decoder_7s is
+    Port (
+        num_in: in integer10;
+        dot: in std_logic;
+        
+        led_out : out std_logic_vector(7 downto 0)
+     );
+    end component;
+    
+    component Decoder_7s_reg is
+    Port (
+        state: in cntr_state_t;
+  
+        reg_out: out disp_reg_t 
+    );
     end component;
 end MiPack;
 

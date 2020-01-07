@@ -5,6 +5,7 @@ use work.MiPack.all;
 
 entity FSM_Main is
     Port ( reset : in STD_LOGIC;
+           start : in std_logic;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
            clk : in STD_LOGIC;
@@ -19,7 +20,7 @@ end FSM_Main;
 
 architecture Behavioral of FSM_Main is
     
-    type state_t is (S0, S10, S20, S11, S21, S3); -- FSM
+    type state_t is (S0, S1, S10, S20, S3); -- FSM
 
     
     signal state: state_t;
@@ -64,34 +65,38 @@ begin
         end if;
     end process;
     
-    nxt_dec: process (state, button1, button2, rdy1, rdy2)
+    nxt_dec: process (state, start, button1, button2, rdy1, rdy2)
     begin
     	nxt_state <= state; --evitar latch
         case state is
         	when S0 =>
-                if button2 = '1' then
+        	    if start = '1' then
+        	       nxt_state <= S1;
+        	    end if;
+
+                
+            when S1 =>
+            	if button2 = '1' then
                     nxt_state <= S10;
                 elsif button1 = '1' then
                     nxt_state <= S20;
                 end if;
                 
             when S10 =>
-            	nxt_state <= S11;
-            when S11 =>
-            	if button1 = '1' then
-                	nxt_state <= S21;
-                elsif rdy1 = '1' then
+                if rdy1 = '1' then
                     nxt_state <= S3;
+            	elsif button1 = '1' then
+                	nxt_state <= S20;
                 end if;
                 
             when S20 => 
-            	nxt_state <= S11;
-            when S21 =>
-            	if button2 = '1' then
-                	nxt_state <= S11;
-                elsif rdy2 = '1' then
+                if rdy2 = '1' then
                     nxt_state <= S3;
+            	elsif button2 = '1' then
+                	nxt_state <= S10;
+                	
                 end if;
+
             
             when S3 =>
                 nxt_state <= S3;
@@ -111,7 +116,7 @@ begin
                 load1 <= '0';
                 load2 <= '0';
                 
-            when S10=>
+            when S1=>
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
@@ -121,24 +126,15 @@ begin
                 load_v1 <= initial_v;
                 load_v2 <= initial_v;
                 
-            when S11 =>
+            when S10 =>
             	fin <= '0';
                 ce_n1 <= '0';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
                 
-            when S20 => 
-            	fin <= '0';
-                ce_n1 <= '1';
-                ce_n2 <= '1';
-                load1 <= '1';
-                load2 <= '1';
                 
-                load_v1 <= initial_v;
-                load_v2 <= initial_v;
-                
-            when S21 =>
+            when S20 =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '0';

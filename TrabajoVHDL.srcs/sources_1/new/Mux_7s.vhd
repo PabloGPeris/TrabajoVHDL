@@ -9,7 +9,8 @@ use work.MiPack.all;
 entity Mux_7s is
 Port (
     clk: in std_logic; --reloj
-    reg: in disp_reg; --registro de 8 std_logic_vector(7 downto 0) de muestra
+    reg1: in disp_reg_t; --registro de 4 std_logic_vector(7 downto 0) de muestra
+    reg2: in disp_reg_t;
     
     led: out std_logic_vector(7 downto 0); --leds que se encienden del display 7 segmentos
     digctrl: out std_logic_vector(7 downto 0) --7 segmentos que se enciende
@@ -17,9 +18,9 @@ Port (
 end Mux_7s;
 
 architecture Behavioral of Mux_7s is
-    subtype muxt is integer range 0 to 7;
+    subtype mux_t is integer range 0 to 7;
     
-    signal mux_signal: muxt := 0;
+    signal mux_signal: mux_t := 0;
 begin
         
     
@@ -43,14 +44,14 @@ begin
     
     --multiplexación led
     with mux_signal select
-    led <=      reg(0) when 0,
-                reg(1) when 1,
-                reg(2) when 2,
-                reg(3) when 3,
-                reg(4) when 4,
-                reg(5) when 5,
-                reg(6) when 6,
-                reg(7) when others;
+    led <=      reg1(0) when 0,
+                reg1(1) when 1,
+                reg1(2) when 2,
+                reg1(3) when 3,
+                reg2(0) when 4,
+                reg2(1) when 5,
+                reg2(2) when 6,
+                reg2(3) when others;
 
     --digctrl <= reg(mux_signal);
 

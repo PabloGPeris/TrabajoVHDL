@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L secureip --snapshot FSM_Main_tb_v1_behav work.FSM_Main_tb_v1 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L secureip --snapshot Cosas_7s_tb_behav work.Cosas_7s_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -15,5 +15,7 @@ Compiling architecture behavioral of entity work.generic_cntr [\generic_cntr(sta
 Compiling architecture behavioral of entity work.generic_cntr [\generic_cntr(state_num=10)\]
 Compiling architecture behavioral of entity work.big_cntr [big_cntr_default]
 Compiling architecture behavioral of entity work.FSM_Main [fsm_main_default]
-Compiling architecture behavioral of entity work.fsm_main_tb_v1
-Built simulation snapshot FSM_Main_tb_v1_behav
+Compiling architecture dataflow of entity work.Decoder_7s [decoder_7s_default]
+Compiling architecture structural of entity work.Decoder_7s_reg [decoder_7s_reg_default]
+Compiling architecture behavioral of entity work.cosas_7s_tb
+Built simulation snapshot Cosas_7s_tb_behav

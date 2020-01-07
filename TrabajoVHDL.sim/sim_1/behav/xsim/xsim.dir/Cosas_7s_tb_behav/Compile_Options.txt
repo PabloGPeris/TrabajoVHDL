@@ -1,0 +1,1 @@
+-wto "e456db25c4d341918ff3b08ae520b38a" --incr --debug "typical" --relax --mt "2" -L "work" -L "secureip" --snapshot "Cosas_7s_tb_behav" "work.Cosas_7s_tb" -log "elaborate.log" 
