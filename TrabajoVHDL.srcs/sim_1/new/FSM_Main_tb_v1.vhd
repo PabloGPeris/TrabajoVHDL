@@ -8,7 +8,7 @@ entity FSM_Main_tb_v1 is
 end FSM_Main_tb_v1;
 
 architecture Behavioral of FSM_Main_tb_v1 is
-    signal clk: std_logic:= '1';
+    signal clk, clk10: std_logic:= '1';
     signal reset, button1, button2: std_logic:= '0';
     
     signal disp_state1, disp_state2: cntr_state_t;
@@ -20,6 +20,7 @@ begin
            button1 => button1,
            button2 => button2,
            clk => clk,
+           clk10 => clk10,
            initial_v => (0, 1, 0, 0 ,0),
            
            disp_state1 => disp_state1,
@@ -28,7 +29,8 @@ begin
            );
            
            
-    clk <= not clk after 50 ms;
+    clk <= not clk after 500 us;
+    clk10 <= not clk10 after 50 ms;
     
     reset <= '1' after 20 ms, '0' after 80 ms;
 

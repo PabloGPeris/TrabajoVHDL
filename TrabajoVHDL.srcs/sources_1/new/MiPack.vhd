@@ -48,6 +48,7 @@ package MiPack is
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
            clk : in STD_LOGIC;
+           clk10 : in STD_LOGIC;
            initial_v : in cntr_state_t;
            
            disp_state1 : out cntr_state_t;

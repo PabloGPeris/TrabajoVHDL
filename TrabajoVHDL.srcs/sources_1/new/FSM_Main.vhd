@@ -2,28 +2,19 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.MiPack.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-
 
 entity FSM_Main is
     Port ( reset : in STD_LOGIC;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
            clk : in STD_LOGIC;
+           clk10 : in std_logic;
            initial_v : in cntr_state_t;
            
            disp_state1 : out cntr_state_t;
            disp_state2 : out cntr_state_t;
            fin : out std_logic
-           );
+           );---------
 end FSM_Main;
 
 architecture Behavioral of FSM_Main is
@@ -42,7 +33,7 @@ architecture Behavioral of FSM_Main is
 begin
     bc1: big_cntr
     Port Map(
-        clk => clk,
+        clk => clk10,
         ce_n => ce_n1,
         load => load1,
         load_v => load_v1,
@@ -54,7 +45,7 @@ begin
     
     bc2: big_cntr
     Port Map(
-        clk => clk,
+        clk => clk10,
         ce_n => ce_n2,
         load => load2,
         load_v => load_v2,
