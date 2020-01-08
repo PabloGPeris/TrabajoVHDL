@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L secureip --snapshot Cosas_7s_tb_behav work.Cosas_7s_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L xil_defaultlib -L secureip --snapshot add_cntr_tb_behav work.add_cntr_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,11 +11,13 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package work.mipack
-Compiling architecture behavioral of entity work.generic_cntr [\generic_cntr(state_num=6)\]
-Compiling architecture behavioral of entity work.generic_cntr [\generic_cntr(state_num=10)\]
-Compiling architecture behavioral of entity work.big_cntr [big_cntr_default]
-Compiling architecture behavioral of entity work.FSM_Main [fsm_main_default]
-Compiling architecture dataflow of entity work.Decoder_7s [decoder_7s_default]
-Compiling architecture structural of entity work.Decoder_7s_reg [decoder_7s_reg_default]
-Compiling architecture behavioral of entity work.cosas_7s_tb
-Built simulation snapshot Cosas_7s_tb_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package xil_defaultlib.mipack
+Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [adder_integer10_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [\adder_integer10(module=6)\]
+Compiling architecture structural of entity work.adder_cntr [adder_cntr_default]
+Compiling architecture behavioral of entity work.add_cntr_tb
+Built simulation snapshot add_cntr_tb_behav

@@ -20,7 +20,7 @@ begin
            start => start,
            button1 => button1,
            button2 => button2,
-           clk => clk,
+           clk1k => clk,
            clk10 => clk10,
            initial_v => (0, 1, 0, 0 ,0),
            

@@ -9,7 +9,7 @@ package MiPack is
     type disp_reg_t is array(3 downto 0) of std_logic_vector(7 downto 0);
     subtype integer10 is natural range 0 to 9;
     type cntr_state_t is array(4 downto 0) of integer10;
-    
+    type gamemode_t is (Normal, Inc);
     
     ---------------
     --componentes--
@@ -49,7 +49,7 @@ package MiPack is
            start : in STD_LOGIC;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
-           clk : in STD_LOGIC;
+           clk1k : in STD_LOGIC;
            clk10 : in STD_LOGIC;
            initial_v : in cntr_state_t;
            
@@ -74,6 +74,29 @@ package MiPack is
         state: in cntr_state_t;
   
         reg_out: out disp_reg_t 
+    );
+    end component;
+    
+    component adder_integer10 is
+    Generic(
+        module: natural:= 10
+    );
+    Port ( 
+        din1 : in integer10; --sumando1
+        din2 : in integer10; --sumando2
+        cin : in std_logic; --acarreo de entrada
+    
+        dout : out integer10; --resultado
+        cout : out std_logic --acarreo de salida
+    );
+    end component;
+    
+    component adder_cntr is
+    Port ( 
+        din1: in cntr_state_t;
+        din2: in cntr_state_t;
+        
+        dout: out cntr_state_t
     );
     end component;
 end MiPack;

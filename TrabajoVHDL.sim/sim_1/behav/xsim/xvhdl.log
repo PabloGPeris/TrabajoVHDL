@@ -1,13 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" into library work
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'Decoder_7s'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'Decoder_7s_reg'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'FSM_Main'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'big_cntr'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'generic_cntr'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/Cosas_7s_tb.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'cosas_7s_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'adder_cntr'

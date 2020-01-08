@@ -8,12 +8,13 @@ entity FSM_Main is
            start : in std_logic;
            button1 : in STD_LOGIC;
            button2 : in STD_LOGIC;
-           clk : in STD_LOGIC;
+           clk1k : in STD_LOGIC;
            clk10 : in std_logic;
            initial_v : in cntr_state_t;
            
            disp_state1 : out cntr_state_t;
            disp_state2 : out cntr_state_t;
+           
            fin : out std_logic
            );---------
 end FSM_Main;
@@ -56,11 +57,11 @@ begin
     
     );
     
-	state_reg: process (reset, clk)
+	state_reg: process (reset, clk1k)
     begin
     	if reset = '1'
         	then state <= S0;
-        elsif rising_edge(clk) then
+        elsif rising_edge(clk1k) then
         	state <= nxt_state;
         end if;
     end process;
