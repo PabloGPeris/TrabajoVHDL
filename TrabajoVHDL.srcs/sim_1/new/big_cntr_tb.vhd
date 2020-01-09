@@ -11,9 +11,9 @@ architecture Behavioral of big_cntr_tb is
     signal clk: std_logic:= '1';
     signal ce_n: std_logic:= '0';
     signal load: std_logic:= '0';
-    signal load_v: cntr_state_t;
+    signal load_v: tiempo_t;
     
-    signal state: cntr_state_t;
+    signal state: tiempo_t;
     signal rdy: std_logic;
 
 begin
@@ -24,7 +24,7 @@ begin
            ce_n => ce_n,
            load => load,
            load_v => load_v,
-           state_out => state,
+           time_out => state,
            rdy_out => rdy
            );
 

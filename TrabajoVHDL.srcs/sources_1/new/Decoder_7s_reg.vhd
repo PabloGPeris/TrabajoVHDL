@@ -5,7 +5,7 @@ use work.MiPack.all;
 
 entity Decoder_7s_reg is
   Port (
-        state: in cntr_state_t;
+        state: in tiempo_t;
   
         reg_out: out disp_reg_t 
     );

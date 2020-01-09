@@ -10,10 +10,10 @@ entity FSM_Main is
            button2 : in STD_LOGIC;
            clk1k : in STD_LOGIC;
            clk10 : in std_logic;
-           initial_v : in cntr_state_t;
+           initial_v : in tiempo_t;
            
-           disp_state1 : out cntr_state_t;
-           disp_state2 : out cntr_state_t;
+           time_out1 : out tiempo_t;
+           time_out2 : out tiempo_t;
            
            fin : out std_logic
            );---------
@@ -29,8 +29,8 @@ architecture Behavioral of FSM_Main is
     
     signal ce_n1, ce_n2: std_logic;
     signal load1, load2: std_logic;
-    signal load_v1, load_v2: cntr_state_t;
-    signal state_out1, state_out2: cntr_state_t;
+    signal load_v1, load_v2: tiempo_t;
+    signal state_out1, state_out2: tiempo_t;
     signal rdy1, rdy2: std_logic;
 begin
     bc1: big_cntr
@@ -40,7 +40,7 @@ begin
         load => load1,
         load_v => load_v1,
         
-        state_out => state_out1,
+        time_out => state_out1,
         rdy_out => rdy1
     
     );
@@ -52,7 +52,7 @@ begin
         load => load2,
         load_v => load_v2,
         
-        state_out => state_out2,
+        time_out => state_out2,
         rdy_out => rdy2
     
     );
@@ -95,9 +95,7 @@ begin
                     nxt_state <= S3;
             	elsif button2 = '1' then
                 	nxt_state <= S10;
-                	
                 end if;
-
             
             when S3 =>
                 nxt_state <= S3;
@@ -159,7 +157,7 @@ begin
     end process;
 
 
-    disp_state1 <= state_out1;
-    disp_state2 <= state_out2;
+    time_out1 <= state_out1;
+    time_out2 <= state_out2;
     
 end Behavioral;

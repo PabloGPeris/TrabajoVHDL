@@ -6,9 +6,9 @@ entity big_cntr is
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable
            load: in STD_LOGIC;
-           load_v : in cntr_state_t;
+           load_v : in tiempo_t;
            
-           state_out : out cntr_state_t;--estados de salida
+           time_out : out tiempo_t;--tiempo de salida
            rdy_out : out STD_LOGIC);
 end big_cntr;
 
@@ -23,7 +23,7 @@ begin
         load => load,
         load_v => load_v(0),
         rdy_nxt_cntr => '1',
-        state_out => state_out(0),--estado interno, pero de salida (para que se pueda
+        state_out => time_out(0),--estado interno, pero de salida (para que se pueda
         rdy => rdy(0)
     );
     
@@ -39,7 +39,7 @@ begin
             load => load,
             load_v => load_v(i), 
             rdy_nxt_cntr => rdy(i - 1),
-            state_out => state_out(i),--estado interno, pero de salida (para que se pueda
+            state_out => time_out(i),--estado interno, pero de salida (para que se pueda
             rdy => rdy(i)
         );
         end generate cntr2_generate; 
@@ -53,7 +53,7 @@ begin
                 load => load,
                 load_v => load_v(i), 
                 rdy_nxt_cntr => rdy(i - 1),
-                state_out => state_out(i),--estado interno, pero de salida (para que se pueda
+                state_out => time_out(i),--estado interno, pero de salida (para que se pueda
                 rdy => rdy(i)
         );
         end generate cntrn_generate;

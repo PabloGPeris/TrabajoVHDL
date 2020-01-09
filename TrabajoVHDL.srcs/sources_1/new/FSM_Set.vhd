@@ -16,8 +16,8 @@ entity FSM_Set is
 
            disp_reg_1: out disp_reg_t;
            sidp_reg_2: out disp_reg_t;
-           initial_v : out cntr_state_t;
-           increment : out cntr_state_t;
+           initial_v : out tiempo_t;
+           increment : out tiempo_t;
            gamemode : out gamemode_t;
            fin : out std_logic
       );
@@ -87,6 +87,7 @@ begin
         	       nxt_state <= S0;
         end case;
     end process;
+    
     
 
 end Behavioral;

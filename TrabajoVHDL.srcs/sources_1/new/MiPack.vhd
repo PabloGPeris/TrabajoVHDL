@@ -6,10 +6,19 @@ package MiPack is
     --------------------
     --tipos y subtipos--
     --------------------
-    type disp_reg_t is array(3 downto 0) of std_logic_vector(7 downto 0);
-    subtype integer10 is natural range 0 to 9;
-    type cntr_state_t is array(4 downto 0) of integer10;
-    type gamemode_t is (Normal, Inc);
+    type disp_reg_t is array(3 downto 0) of std_logic_vector(7 downto 0); --array de registros de contador 7 segmentos
+    subtype integer10 is natural range 0 to 9; -- enteros del 0 al 9
+    type tiempo_t is array(4 downto 0) of integer10; --tiempo formado por 5 números del 1 al 10
+    --(decenas de minutos, minutos, decenas de segundos [del 0 al 5], segundos y décima de segundo.
+    type gamemode_t is (Normal, Inc); --modo de juego
+    
+    
+    -------------
+    --funciones--
+    -------------
+    
+    function isgreater(din1, din2: tiempo_t) return std_logic;
+    function isgreatereq(din1, din2: tiempo_t) return std_logic;
     
     ---------------
     --componentes--
@@ -37,9 +46,9 @@ package MiPack is
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable
            load: in STD_LOGIC;
-           load_v : in cntr_state_t;
+           load_v : in tiempo_t;
 
-           state_out : out cntr_state_t;--estados de salida
+           time_out : out tiempo_t;--estados de salida
            rdy_out : out STD_LOGIC);
     end component;
     
@@ -51,10 +60,10 @@ package MiPack is
            button2 : in STD_LOGIC;
            clk1k : in STD_LOGIC;
            clk10 : in STD_LOGIC;
-           initial_v : in cntr_state_t;
+           initial_v : in tiempo_t;
            
-           disp_state1 : out cntr_state_t;
-           disp_state2 : out cntr_state_t;
+           disp_state1 : out tiempo_t;
+           disp_state2 : out tiempo_t;
            fin : out std_logic
            );
     end component;
@@ -71,7 +80,7 @@ package MiPack is
     
     component Decoder_7s_reg is
     Port (
-        state: in cntr_state_t;
+        state: in tiempo_t;
   
         reg_out: out disp_reg_t 
     );
@@ -91,14 +100,52 @@ package MiPack is
     );
     end component;
     
-    component adder_cntr is
+    component adder_time is
     Port ( 
-        din1: in cntr_state_t;
-        din2: in cntr_state_t;
+        din1: in tiempo_t;
+        din2: in tiempo_t;
         
-        dout: out cntr_state_t
+        dout: out tiempo_t;
+        complement: in std_logic
     );
+    end component;
+    
+    component substracter_time is
+    Port ( 
+        din1: in tiempo_t;
+        din2: in tiempo_t;
+        
+        dout: out tiempo_t 
+        );
     end component;
 end MiPack;
 
 
+
+package body mipack is
+    function isgreater(din1, din2: tiempo_t) return std_logic is
+    begin
+    ff: for i in 4 downto 0 loop
+        if din1(i) > din2(i) then
+            return '1';
+        elsif din1(i) < din2(i) then
+            return '0';
+        end if;
+    end loop;
+    
+    return '0';
+    end;
+    
+    function isgreatereq(din1, din2: tiempo_t) return std_logic is
+    begin
+    ff: for i in 4 downto 0 loop
+        if din1(i) > din2(i) then
+            return '1';
+        elsif din1(i) < din2(i) then
+            return '0';
+        end if;
+    end loop;
+    
+    return '1';
+    end;
+end package body;

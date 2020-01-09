@@ -2,19 +2,20 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.MiPack.all;
 
-entity adder_cntr is
+entity adder_time is
     Port ( 
-        din1: in cntr_state_t;
-        din2: in cntr_state_t;
+        din1: in tiempo_t;
+        din2: in tiempo_t;
         
-        dout: out cntr_state_t
+        dout: out tiempo_t;
+        complement: in std_logic --poner a 1 para que haga el complemento a 10 (¿?)
     );
-end adder_cntr;
+end adder_time;
 
-architecture structural of adder_cntr is
+architecture structural of adder_time is
     signal cin: std_logic_vector(5 downto 0);
 begin
-    cin(0) <= '0';
+    cin(0) <= complement;
     
     add_generate: 
     for i in 0 to 4 generate

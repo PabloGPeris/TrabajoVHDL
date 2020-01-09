@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L xil_defaultlib -L secureip --snapshot add_cntr_tb_behav work.add_cntr_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L work -L xil_defaultlib -L secureip --snapshot adder_time_tb_behav work.adder_time_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -18,6 +18,7 @@ Compiling package ieee.math_real
 Compiling package xil_defaultlib.mipack
 Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [adder_integer10_default]
 Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [\adder_integer10(module=6)\]
-Compiling architecture structural of entity work.adder_cntr [adder_cntr_default]
-Compiling architecture behavioral of entity work.add_cntr_tb
-Built simulation snapshot add_cntr_tb_behav
+Compiling architecture structural of entity work.adder_time [adder_time_default]
+Compiling architecture behavioral of entity work.substracter_time [substracter_time_default]
+Compiling architecture behavioral of entity work.adder_time_tb
+Built simulation snapshot adder_time_tb_behav
