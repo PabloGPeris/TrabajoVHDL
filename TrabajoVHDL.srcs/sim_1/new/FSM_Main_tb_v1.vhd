@@ -11,7 +11,7 @@ architecture Behavioral of FSM_Main_tb_v1 is
     signal clk, clk10: std_logic:= '1';
     signal reset, start, button1, button2: std_logic:= '0';
     
-    signal disp_state1, disp_state2: cntr_state_t;
+    signal disp_state1, disp_state2: tiempo_t;
     signal fin : std_logic;
 begin
     fsmmain: FSM_Main
@@ -24,8 +24,8 @@ begin
            clk10 => clk10,
            initial_v => (0, 1, 0, 0 ,0),
            
-           disp_state1 => disp_state1,
-           disp_state2 => disp_state2,
+           time_out1 => disp_state1,
+           time_out2 => disp_state2,
            fin => fin
            );
  

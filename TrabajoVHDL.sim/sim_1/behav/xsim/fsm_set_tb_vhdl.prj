@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl2008 work  \
+"../../../../TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/FSM_Set_tb.vhd" \
+
+# Do not sort compile order
+nosort
