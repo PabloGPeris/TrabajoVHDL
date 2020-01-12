@@ -6,7 +6,7 @@ use work.MiPack.all;
 
 entity generic_cntr is
     Generic (
-        state_num : positive:= 10 --SEMIPERIODO
+        state_num : integer10:= 10 --SEMIPERIODO
     );
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable

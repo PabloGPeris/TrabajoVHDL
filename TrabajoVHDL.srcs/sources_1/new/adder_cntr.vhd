@@ -8,7 +8,7 @@ entity adder_time is
         din2: in tiempo_t;
         
         dout: out tiempo_t;
-        complement: in std_logic --poner a 1 para que haga el complemento a 10 (¿?)
+        complement: in std_logic:= '0' --poner a 1 para que haga el complemento a 10 (¿?)
     );
 end adder_time;
 

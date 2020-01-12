@@ -29,11 +29,14 @@ package MiPack is
     constant d8: std_logic_vector(6 downto 0 ):= "0000000";
     constant d9: std_logic_vector(6 downto 0 ):= "0001100";
     constant dguion: std_logic_vector(7 downto 0):= "11111101";
+    constant dA: std_logic_vector(7 downto 0):= "00010001";
     constant dC: std_logic_vector(7 downto 0):= "01100011";
+    constant dD: std_logic_vector(7 downto 0):= "10000101";
     constant dE: std_logic_vector(7 downto 0):= "01100001";
     constant dI: std_logic_vector(7 downto 0):= "11110011";
     constant dL: std_logic_vector(7 downto 0):= "11100011";
     constant dN: std_logic_vector(7 downto 0):= "11010101";
+    constant dO: std_logic_vector(7 downto 0):= "11000101";
     constant dP: std_logic_vector(7 downto 0):= "00110001";
     constant dR: std_logic_vector(7 downto 0):= "11110101";
     constant dS: std_logic_vector(7 downto 0):= d5 & "1";
@@ -95,23 +98,23 @@ package MiPack is
            );
     end component;
     
-    component FSM_Set is
-    port(
-           reset : in STD_LOGIC;
-           start : in std_logic;
-           ok : in std_logic;
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
-           clk10 : in std_logic;
+--    component FSM_Set is
+--    port(
+--           reset : in STD_LOGIC;
+--           start : in std_logic;
+--           ok : in std_logic;
+--           button1 : in STD_LOGIC;
+--           button2 : in STD_LOGIC;
+--           clk10 : in std_logic;
            
-           disp_reg_1: out disp_reg_t;
-           disp_reg_2: out disp_reg_t;
-           initial_v : out tiempo_t;
-           increment : out tiempo_t;
-           gamemode : out gamemode_t;
-           fin : out std_logic
-      );
-    end component;
+--           disp_reg_1: out disp_reg_t;
+--           disp_reg_2: out disp_reg_t;
+--           initial_v : out tiempo_t;
+--           increment : out tiempo_t;
+--           gamemode : out gamemode_t;
+--           fin : out std_logic
+--      );
+--    end component;
     
     component Decoder_7s is
     Port (
@@ -150,7 +153,7 @@ package MiPack is
         din2: in tiempo_t;
         
         dout: out tiempo_t;
-        complement: in std_logic
+        complement: in std_logic:= '0'
     );
     end component;
     
@@ -162,11 +165,48 @@ package MiPack is
         dout: out tiempo_t 
         );
     end component;
+    
+    component Adder_Subs_Sync is
+    port(
+           reset: in std_logic;
+           ce: in std_logic; --clock enable (poner a 1 para sumar y restar)
+           suma: in std_logic;
+           din1: in tiempo_t;
+           din2: in tiempo_t;
+           clk : in std_logic;
+           
+           dout: out tiempo_t
+      );
+    end component;
+    
+    component FSM_AddSub is
+    port(
+           start : in std_logic;--señal de inicio
+           
+           reset : in STD_LOGIC;--botón reset
+           ok : in std_logic;--botón ok
+           button1 : in STD_LOGIC;--botón 1 (decremento)
+           button2 : in STD_LOGIC;--botón 2 (incremento)
+           gamemode : in gamemode_t;
+           clk10 : in std_logic;
+           clk1k: in std_logic;
+           
+           disp_reg: out disp_reg_t;--letras que se van a mostrar en pantalla
+           time_out: out tiempo_t;--tiempo que se va a mostrar en pantalla
+           initial_v : out tiempo_t;
+           increment : out tiempo_t;
+
+           fin : out std_logic
+      );
+      
+      
+    end component;
+    
 end MiPack;
 
 
 
-package body mipack is
+package body MiPack is
     function isgreater(din1, din2: tiempo_t) return std_logic is
     begin
     ff: for i in 4 downto 0 loop
@@ -192,4 +232,6 @@ package body mipack is
     
     return '1';
     end;
+    
+
 end package body;
