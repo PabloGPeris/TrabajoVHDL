@@ -17,7 +17,10 @@ package MiPack is
     --------------
     --constantes--
     --------------
-    --las constantes dx representan los segmentos que se iluminarían para formar la letra o número
+    
+    --las constantes dx representan los segmentos que se iluminarían para
+    --formar la letra o número deseado. Los números son solo 7 bits porque
+    --incluyen la posibilidad de poner un punto
     constant d0: std_logic_vector(6 downto 0 ):= "0000001";
     constant d1: std_logic_vector(6 downto 0 ):= "1001111";
     constant d2: std_logic_vector(6 downto 0 ):= "0010010";
@@ -55,9 +58,11 @@ package MiPack is
     ---------------
     
 
-    component generic_cntr is --contador genérico para los temporizadores
+    component generic_cntr is 
+    --contador genérico para los temporizadores, que puede contar hasta 10
+    --o menos
     Generic (
-        state_num : positive
+        state_num : integer10:= 10
     );
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable
@@ -82,41 +87,8 @@ package MiPack is
            rdy_out : out STD_LOGIC);
     end component;
     
-    
-    component FSM_Main is
-    Port ( reset : in STD_LOGIC;
-           start : in STD_LOGIC;
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
-           clk1k : in STD_LOGIC;
-           clk10 : in STD_LOGIC;
-           initial_v : in tiempo_t;
-           
-           disp_state1 : out tiempo_t;
-           disp_state2 : out tiempo_t;
-           fin : out std_logic
-           );
-    end component;
-    
---    component FSM_Set is
---    port(
---           reset : in STD_LOGIC;
---           start : in std_logic;
---           ok : in std_logic;
---           button1 : in STD_LOGIC;
---           button2 : in STD_LOGIC;
---           clk10 : in std_logic;
-           
---           disp_reg_1: out disp_reg_t;
---           disp_reg_2: out disp_reg_t;
---           initial_v : out tiempo_t;
---           increment : out tiempo_t;
---           gamemode : out gamemode_t;
---           fin : out std_logic
---      );
---    end component;
-    
     component Decoder_7s is
+    --decodificador integer10 a 7 segmentos (marcar 2 para el punto)
     Port (
         num_in: in integer10;
         dot: in std_logic;
@@ -126,14 +98,17 @@ package MiPack is
     end component;
     
     component Decoder_7s_reg is
+    --decodificador de tiempo_t a registro de display (disp_reg), que se
+    --empleará para 4 siete segmentos
     Port (
-        state: in tiempo_t;
+        time_in: in tiempo_t;
   
         reg_out: out disp_reg_t 
     );
     end component;
     
     component adder_integer10 is
+    --sumador de integer10 con acarreo de entrada y salida
     Generic(
         module: natural:= 10
     );
@@ -148,16 +123,21 @@ package MiPack is
     end component;
     
     component adder_time is
+    --sumador de tiempo_t. No indica desbordamiento
     Port ( 
         din1: in tiempo_t;
         din2: in tiempo_t;
         
         dout: out tiempo_t;
-        complement: in std_logic:= '0'
+        complement: in std_logic:= '0' --poner a 1 para indicar que el
+        --primer carry out es 1, necesario si el sin2 es complemento (a 9)
+        --para poder hacer la resta
     );
     end component;
     
     component substracter_time is
+    --restador de tiempo_t, pasando a complemento a 9 y luego 10. No indica
+    --desbordamiento
     Port ( 
         din1: in tiempo_t;
         din2: in tiempo_t;
@@ -167,10 +147,12 @@ package MiPack is
     end component;
     
     component Adder_Subs_Sync is
+    --sumador y restador síncrono de din1 y din2. Evita el desbordamiento
+    --haciendo una comparación
     port(
            reset: in std_logic;
            ce: in std_logic; --clock enable (poner a 1 para sumar y restar)
-           suma: in std_logic;
+           suma: in std_logic; -- = '1', suma; = '0', resta
            din1: in tiempo_t;
            din2: in tiempo_t;
            clk : in std_logic;
@@ -179,7 +161,32 @@ package MiPack is
       );
     end component;
     
+    ----------------------------
+    --máquinas de estado (FSM)--
+    ----------------------------
+    
+    component FSM_Set is
+    port(
+           start : in std_logic;--señal de inicio
+           
+           reset : in STD_LOGIC;--botón de reset
+           ok : in std_logic;--botón de ok
+           button1 : in STD_LOGIC;
+           button2 : in STD_LOGIC;
+           clk : in std_logic;--reloj (1 kHz)
+           
+           disp_reg_1: out disp_reg_t;--lo que muestra el primer cuarteto
+           --de 7 segmentos
+           disp_reg_2: out disp_reg_t;--lo que muestra el 2º cuarteto
+           --de 7 segmentos
+           gamemode : out gamemode_t;--modo de juego
+           
+           fin : out std_logic--señal de fin
+      );   
+    end component;
+    
     component FSM_AddSub is
+    --máquina de estados de suma y resta de tiempos
     port(
            start : in std_logic;--señal de inicio
            
@@ -198,10 +205,25 @@ package MiPack is
 
            fin : out std_logic
       );
-      
-      
     end component;
     
+    component FSM_Main is
+    Port ( 
+           start : in STD_LOGIC;--señal de inicio
+           
+           reset : in STD_LOGIC; --botón reset
+           button1 : in STD_LOGIC;--botón 1
+           button2 : in STD_LOGIC;--botón 2
+           clk1k : in STD_LOGIC;--reloj de 1kHz (para la FSM)
+           clk10 : in STD_LOGIC;--reloj de 10 Hz (para la temporización)
+           initial_v : in tiempo_t; --tiempo inicial
+           
+           time_out1 : out tiempo_t;--tiempo del jugador 1
+           time_out2 : out tiempo_t;--tiempo del jugador 2
+           
+           fin : out std_logic--señal de fin
+           );
+    end component;
 end MiPack;
 
 
