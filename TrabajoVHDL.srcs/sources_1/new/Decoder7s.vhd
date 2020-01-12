@@ -17,17 +17,17 @@ architecture dataflow of Decoder_7s is
 begin
 
     with num_in select
-    led_interno <= "0000001" when 0,
-                   "1001111" when 1,
-                   "0010010" when 2,
-                   "0000110" when 3,
-                   "1001100" when 4,
-                   "0100100" when 5,
-                   "0100000" when 6,
-                   "0001111" when 7,
-                   "0000000" when 8,
-                   "0001100" when 9,
-                   "1111110" when others;
+    led_interno <= d0 when 0,
+                   d1 when 1,
+                   d2 when 2,
+                   d3 when 3,
+                   d4 when 4,
+                   d5 when 5,
+                   d6 when 6,
+                   d7 when 7,
+                   d8 when 8,
+                   d9 when 9,
+                   d0 when others;
     
     led_out <= led_interno & dot;
 

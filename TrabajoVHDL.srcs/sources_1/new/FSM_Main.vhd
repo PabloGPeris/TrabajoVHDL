@@ -12,8 +12,8 @@ entity FSM_Main is
            clk10 : in std_logic;
            initial_v : in tiempo_t;
            
-           time_out1 : out tiempo_t;
-           time_out2 : out tiempo_t;
+           disp_reg_1: out disp_reg_t;
+           disp_reg_2: out disp_reg_t;
            
            fin : out std_logic
            );---------
@@ -30,7 +30,7 @@ architecture Behavioral of FSM_Main is
     signal ce_n1, ce_n2: std_logic;
     signal load1, load2: std_logic;
     signal load_v1, load_v2: tiempo_t;
-    signal state_out1, state_out2: tiempo_t;
+    signal time_out1, time_out2: tiempo_t;
     signal rdy1, rdy2: std_logic;
 begin
     bc1: big_cntr
@@ -40,7 +40,7 @@ begin
         load => load1,
         load_v => load_v1,
         
-        time_out => state_out1,
+        time_out => time_out1,
         rdy_out => rdy1
     
     );
@@ -52,10 +52,25 @@ begin
         load => load2,
         load_v => load_v2,
         
-        time_out => state_out2,
+        time_out => time_out2,
         rdy_out => rdy2
     
     );
+    
+    dec1: Decoder_7s_reg
+    Port map(
+        state => time_out1,
+        
+        reg_out => disp_reg_1
+    );
+    
+    dec2: Decoder_7s_reg
+    Port map(
+        state => time_out2,
+        
+        reg_out => disp_reg_2
+    );
+    
     
 	state_reg: process (reset, clk1k)
     begin
@@ -156,8 +171,5 @@ begin
         end case;
     end process;
 
-
-    time_out1 <= state_out1;
-    time_out2 <= state_out2;
     
 end Behavioral;

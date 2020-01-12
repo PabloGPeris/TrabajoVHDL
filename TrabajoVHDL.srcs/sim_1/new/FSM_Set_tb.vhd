@@ -15,7 +15,7 @@ architecture Behavioral of fsm_set_tb is
     signal initial_v, increment: tiempo_t;
     signal dr1, dr2: disp_reg_t;
     signal fin: std_logic;
-    signal state: Set_state_t;
+    --signal state: Set_state_t;
 begin
     uut: FSM_Set
     port map(
@@ -31,8 +31,8 @@ begin
            initial_v => initial_v,
            increment => increment,
            gamemode => gamemode,
-           fin => fin,
-           state_o => state
+           fin => fin
+
       );
       
       clk <= not clk after 100 ms;

@@ -13,27 +13,29 @@ package MiPack is
     type gamemode_t is (Sin, Inc); --modo de juego
     
     
-     type Set_state_t is (S0, S1, S2, S11, S12, S5_End); --s1 sin, s2 inc, s11 set time, s12 set increment
+    
     --------------
     --constantes--
     --------------
-    constant d0: std_logic_vector(6 downto 0):= "0000001";
-    constant d1: std_logic_vector(6 downto 0):= "1001111";
-    constant d2: std_logic_vector(6 downto 0):= "0010010";
-    constant d3: std_logic_vector(6 downto 0):= "0000110";
-    constant d4: std_logic_vector(6 downto 0):= "1001100";
-    constant d5: std_logic_vector(6 downto 0):= "0100100";
-    constant d6: std_logic_vector(6 downto 0):= "0100000";
-    constant d7: std_logic_vector(6 downto 0):= "0001111";
-    constant d8: std_logic_vector(6 downto 0):= "0000000";
-    constant d9: std_logic_vector(6 downto 0):= "0001100";
+    --las constantes dx representan los segmentos que se iluminarían para formar la letra o número
+    constant d0: std_logic_vector(6 downto 0 ):= "0000001";
+    constant d1: std_logic_vector(6 downto 0 ):= "1001111";
+    constant d2: std_logic_vector(6 downto 0 ):= "0010010";
+    constant d3: std_logic_vector(6 downto 0 ):= "0000110";
+    constant d4: std_logic_vector(6 downto 0 ):= "1001100";
+    constant d5: std_logic_vector(6 downto 0 ):= "0100100";
+    constant d6: std_logic_vector(6 downto 0 ):= "0100000";
+    constant d7: std_logic_vector(6 downto 0 ):= "0001111";
+    constant d8: std_logic_vector(6 downto 0 ):= "0000000";
+    constant d9: std_logic_vector(6 downto 0 ):= "0001100";
     constant dguion: std_logic_vector(7 downto 0):= "11111101";
     constant dC: std_logic_vector(7 downto 0):= "01100011";
     constant dE: std_logic_vector(7 downto 0):= "01100001";
-    constant dI: std_logic_vector(7 downto 0):= d1 & "1";
+    constant dI: std_logic_vector(7 downto 0):= "11110011";
     constant dL: std_logic_vector(7 downto 0):= "11100011";
     constant dN: std_logic_vector(7 downto 0):= "11010101";
     constant dP: std_logic_vector(7 downto 0):= "00110001";
+    constant dR: std_logic_vector(7 downto 0):= "11110101";
     constant dS: std_logic_vector(7 downto 0):= d5 & "1";
     constant dT: std_logic_vector(7 downto 0):= "01110011";
     constant dY: std_logic_vector(7 downto 0):= "10110001";
@@ -107,10 +109,7 @@ package MiPack is
            initial_v : out tiempo_t;
            increment : out tiempo_t;
            gamemode : out gamemode_t;
-           fin : out std_logic;
-           
-           
-           state_o: out Set_state_t
+           fin : out std_logic
       );
     end component;
     
