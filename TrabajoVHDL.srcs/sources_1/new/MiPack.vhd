@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-package MiPack is
+package Paco is
 
     --------------------
     --tipos y subtipos--
@@ -11,7 +11,7 @@ package MiPack is
     type tiempo_t is array(4 downto 0) of integer10; --tiempo formado por 5 números del 1 al 10
     --(decenas de minutos, minutos, decenas de segundos [del 0 al 5], segundos y décima de segundo.
     type gamemode_t is (Sin, Inc); --modo de juego
-    
+    type state_t is (S0, S1, S2, S3, S4, S5);
     
     
     --------------
@@ -62,7 +62,7 @@ package MiPack is
     --contador genérico para los temporizadores, que puede contar hasta 10
     --o menos
     Generic (
-        state_num : integer10:= 10
+        state_num : positive:= 10
     );
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable
@@ -224,11 +224,11 @@ package MiPack is
            fin : out std_logic--señal de fin
            );
     end component;
-end MiPack;
+end Paco;
 
 
 
-package body MiPack is
+package body Paco is
     function isgreater(din1, din2: tiempo_t) return std_logic is
     begin
     ff: for i in 4 downto 0 loop

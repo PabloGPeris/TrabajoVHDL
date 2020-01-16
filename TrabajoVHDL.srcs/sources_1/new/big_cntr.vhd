@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.MiPack.all;
+use work.Paco.all;
 
 entity big_cntr is
     Port ( clk : in STD_LOGIC;

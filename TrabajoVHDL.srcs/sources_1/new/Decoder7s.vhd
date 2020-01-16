@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.MiPack.all;
+use work.Paco.all;
 
 entity Decoder_7s is
     Port (

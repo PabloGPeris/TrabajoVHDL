@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sim_1/new/FAS_TB.vhd" into library work
-INFO: [VRFC 10-3107] analyzing entity 'FAS_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'FSM_AddSub'

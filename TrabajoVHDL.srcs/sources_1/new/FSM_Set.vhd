@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.mipack.all;
+use work.Paco.all;
 
 
 entity FSM_Set is
@@ -45,9 +45,9 @@ begin
     	if reset = '1' then 
         	state <= S0;
         	
-        	button1_pressed <= '0';--separar esto
-        	button2_pressed <= '0';
-        	ok_pressed <= '0';
+        	button1_pressed <= '1';--separar esto
+        	button2_pressed <= '1';
+        	ok_pressed <= '1';
         	
         elsif rising_edge(clk) then
         	state <= nxt_state;

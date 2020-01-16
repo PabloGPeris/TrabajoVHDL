@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.MiPack.all;
+use work.Paco.all;
 
 
 entity FSM_AddSub is
@@ -62,6 +62,7 @@ begin
     begin
     	if reset = '1' then 
         	state <= S0;
+        	ok_pressed <= '1';
         elsif rising_edge(clk1k) then
         	state <= nxt_state;
         	ok_pressed <= ok;
@@ -70,7 +71,7 @@ begin
     
 
     
-    nxt_dec: process (state, start, ok, ok_pressed)
+    nxt_dec: process (state, start, ok)
     begin
     	nxt_state <= state; 
         case state is

@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.MiPack.all;
+use work.Paco.all;
 
 
 entity Adder_Subs_Sync is
@@ -21,6 +21,20 @@ architecture Behavioral of Adder_Subs_Sync is
 
     --cosas de sumadores y restadores
     signal dout_adder, dout_sub : tiempo_t;
+    
+    
+    component adder_time is
+    --sumador de tiempo_t. No indica desbordamiento
+    Port ( 
+        din1: in tiempo_t;
+        din2: in tiempo_t;
+        
+        dout: out tiempo_t;
+        complement: in std_logic:= '0' --poner a 1 para indicar que el
+        --primer carry out es 1, necesario si el sin2 es complemento (a 9)
+        --para poder hacer la resta
+    );
+    end component;
     
 begin
 

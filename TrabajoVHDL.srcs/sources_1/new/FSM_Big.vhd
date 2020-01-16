@@ -1,8 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.mipack.all;
-
+use work.Paco.all;
 
 entity FSM_Big is
   Port (
@@ -14,12 +13,13 @@ entity FSM_Big is
            clk1k: in std_logic;
            
            disp_reg1: out disp_reg_t;
-           disp_reg2: out disp_reg_t
+           disp_reg2: out disp_reg_t;
+           state_out: out state_t
    );
 end FSM_Big;
 
 architecture Behavioral of FSM_Big is
-    type state_t is (S0, S1, S2, S3, S4, S5);
+    --type state_t is (S0, S1, S2, S3, S4, S5);
     
     signal state, nxt_state: state_t;
     
@@ -47,6 +47,8 @@ architecture Behavioral of FSM_Big is
     
 begin
 
+    state_out <= state;
+
     setfsm: FSM_Set
     port map(
            start => start_set,
@@ -54,12 +56,12 @@ begin
            reset => reset or reset_set,
            ok => ok,
            button1 => button1,
-           button2 => button1,
+           button2 => button2,
            clk => clk1k,
            
            disp_reg_1 => disp_reg_set1,
            disp_reg_2 => disp_reg_set2,
-           gamemode => gamemode_t,
+           gamemode => gamemode,
            
            fin => fin_set
       );   
@@ -161,7 +163,7 @@ begin
         end case;
     end process;
 
-    out_dec: process(state) 
+    out_dec: process(state, clk1k) 
     begin
     case state is
     
