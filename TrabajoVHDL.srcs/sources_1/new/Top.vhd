@@ -27,20 +27,20 @@ architecture Behavioral of Top is
            clk10 : out STD_LOGIC);
     end component;
     
-    component input_interface is
-    Port (
-        button1_in: in std_logic;
-        button2_in: in std_logic;
-        ok_in: in std_logic;
-        reset: in std_logic;
-        clk1k: in std_logic;
+--    component input_interface is
+--    Port (
+--        button1_in: in std_logic;
+--        button2_in: in std_logic;
+--        ok_in: in std_logic;
+--        reset: in std_logic;
+--        clk1k: in std_logic;
         
-        button1_out: out std_logic;
-        button2_out: out std_logic;
-        ok_out: out std_logic
+--        button1_out: out std_logic;
+--        button2_out: out std_logic;
+--        ok_out: out std_logic
 
-    );
-    end component;
+--    );
+--    end component;
     
     
     component FSM_Big is
@@ -53,8 +53,7 @@ architecture Behavioral of Top is
            clk1k: in std_logic;
            
            disp_reg1: out disp_reg_t;
-           disp_reg2: out disp_reg_t;
-           state_out: out state_t
+           disp_reg2: out disp_reg_t
     );
     end component;
     
@@ -70,9 +69,8 @@ architecture Behavioral of Top is
     end component;
     
     signal clk10, clk1k: std_logic;
-    signal button1_sync, button2_sync, ok_sync: std_logic;
+    --signal button1_sync, button2_sync, ok_sync: std_logic;
     signal disp_reg1, disp_reg2: disp_reg_t;
-    signal state: state_t;
 begin
 
     dcmtop: DCM
@@ -83,32 +81,17 @@ begin
         clk10 => clk10
     );
 
-    iitop: input_interface
-    Port map(
-        button1_in => button1,
-        button2_in => button2,
-        ok_in => ok,
-        reset => reset,
-        clk1k =>clk1k,
-        
-        button1_out => button1_sync,
-        button2_out => button2_sync,
-        ok_out => ok_sync
-
-    );
-
     fsmtop: FSM_Big
     Port map(
            reset => reset,
-           ok => ok_sync,
-           button1 => button1_sync,
-           button2 => button2_sync,
+           ok => ok,
+           button1 => button1,
+           button2 => button2,
            clk10 => clk10,
            clk1k => clk1k,
            
            disp_reg1 => disp_reg1,
-           disp_reg2 => disp_reg2,
-           state_out => state
+           disp_reg2 => disp_reg2
     );
 
     muxtop: Mux_7s

@@ -17,8 +17,7 @@ architecture Behavioral of FSM_Big_tb1 is
            clk1k: in std_logic;
            
            disp_reg1: out disp_reg_t;
-           disp_reg2: out disp_reg_t;
-           state_out: out state_t
+           disp_reg2: out disp_reg_t
     );
     end component;
     
@@ -27,7 +26,6 @@ architecture Behavioral of FSM_Big_tb1 is
     
     signal disp1, disp2: disp_reg_t;
     
-    signal state: state_t;
 begin
 
 uut: FSM_Big 
@@ -40,8 +38,7 @@ uut: FSM_Big
            clk1k => clk1k,
            
            disp_reg1 => disp1,
-           disp_reg2 => disp2,
-           state_out => state
+           disp_reg2 => disp2
     );
     
     clk1k <= not clk1k after 500 us;

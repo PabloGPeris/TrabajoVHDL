@@ -13,13 +13,12 @@ entity FSM_Big is
            clk1k: in std_logic;
            
            disp_reg1: out disp_reg_t;
-           disp_reg2: out disp_reg_t;
-           state_out: out state_t
+           disp_reg2: out disp_reg_t
    );
 end FSM_Big;
 
 architecture Behavioral of FSM_Big is
-    --type state_t is (S0, S1, S2, S3, S4, S5);
+    type state_t is (S0, S1, S2, S3, S4, S5);
     
     signal state, nxt_state: state_t;
     
@@ -46,8 +45,6 @@ architecture Behavioral of FSM_Big is
     signal initial_v, increment: tiempo_t;
     
 begin
-
-    state_out <= state;
 
     setfsm: FSM_Set
     port map(
@@ -118,7 +115,7 @@ begin
         reg_out => dout_dec2
     );
 
-    state_reg: process (reset, clk1k)
+    state_reg: process (all)
     begin
     	if reset = '1' then 
             state <= S0;
@@ -163,7 +160,7 @@ begin
         end case;
     end process;
 
-    out_dec: process(state, clk1k) 
+    out_dec: process (state, clk1k) 
     begin
     case state is
     
@@ -184,8 +181,8 @@ begin
                 
             when S1 =>
                 reset_set <= '0';
-                reset_addsub <= '1';
-                reset_main <= '1';
+                reset_addsub <= '0';
+                reset_main <= '0';
                 
                 start_set <= '1';
                 start_addsub <= '0';
@@ -197,9 +194,9 @@ begin
                 
                 
             when S2 =>
-                reset_set <= '1';
-                reset_addsub <= '1';
-                reset_main <= '1';
+                reset_set <= '0';
+                reset_addsub <= '0';
+                reset_main <= '0';
                 
                 start_set <= '0';
                 start_addsub <= '0';
@@ -210,9 +207,9 @@ begin
                 disp_reg2 <= dout_dec2;
             
             when S3 =>
-                reset_set <= '1';
+                reset_set <= '0';
                 reset_addsub <= '0';
-                reset_main <= '1';
+                reset_main <= '0';
                 
                 start_set <= '0';
                 start_addsub <= '1';
@@ -222,9 +219,9 @@ begin
                 disp_reg1 <= disp_reg_addsub1;
                 disp_reg2 <= dout_dec2;
             when S4 =>
-                reset_set <= '1';
-                reset_addsub <= '1';
-                reset_main <= '1';
+                reset_set <= '0';
+                reset_addsub <= '0';
+                reset_main <= '0';
                 
                 start_set <= '0';
                 start_addsub <= '0';
@@ -234,8 +231,8 @@ begin
                 disp_reg1 <= dout_dec1;
                 disp_reg2 <= dout_dec2;
             when S5 =>
-                reset_set <= '1';
-                reset_addsub <= '1';
+                reset_set <= '0';
+                reset_addsub <= '0';
                 reset_main <= '0';
                 
                 start_set <= '0';

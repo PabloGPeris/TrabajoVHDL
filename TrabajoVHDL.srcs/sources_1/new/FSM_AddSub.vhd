@@ -42,7 +42,7 @@ architecture Behavioral of FSM_AddSub is
 
     --variables internas
     signal initial_v_interno, increment_interno : tiempo_t;
-    
+    signal nxt_initial_v, nxt_increment : tiempo_t;
     
 begin
 
@@ -65,6 +65,8 @@ begin
         	ok_pressed <= '1';
         elsif rising_edge(clk1k) then
         	state <= nxt_state;
+        	initial_v_interno <= nxt_initial_v;
+        	increment_interno <= nxt_increment;
         	ok_pressed <= ok;
         end if;
     end process;
@@ -107,7 +109,7 @@ begin
         end case;
     end process;
     
-    output_dec: process(state, button1, button2, clk1k)
+    output_dec: process (state, button1, button2, clk1k)
     begin
         case state is
         	when S0 =>
@@ -117,8 +119,8 @@ begin
                 ce_addsub <= '0';
                 reset_addsub <= '1';
                 
-                initial_v_interno <= (1, 0, 0, 0, 0); --10 min
-                increment_interno <= (0, 0, 0, 3, 0); --3 segundos
+                nxt_initial_v <= (1, 0, 0, 0, 0); --10 min
+                nxt_increment <= (0, 0, 0, 3, 0); --3 segundos
                
                 disp_reg <= (dguion, dguion, dguion, dguion); -- "----"
                 time_out <= initial_v_interno;
@@ -136,8 +138,8 @@ begin
         	    disp_reg <= (dt, di, de, dguion); -- "TiE-"
         	    time_out <= initial_v_interno;
                
-                initial_v_interno <= dout_addsub;
-                increment_interno <= increment_interno;
+                nxt_initial_v <= dout_addsub;
+                nxt_increment <= increment_interno;
         	    
         	    fin <= '0';
         	    
@@ -151,8 +153,8 @@ begin
         	    disp_reg <= (di, dn, dc, dguion); -- "inC-"
         	    time_out <= increment_interno;
                
-                initial_v_interno <= initial_v_interno;
-        	    increment_interno <= dout_Addsub;
+                nxt_initial_v <= initial_v_interno;
+        	    nxt_increment <= dout_Addsub;
         	   
         	    fin <= '0';
         	   
@@ -166,8 +168,8 @@ begin
         	    disp_reg <= (di, dn, dc, dguion); -- "inC-"
         	    time_out <= increment_interno;
                
-                initial_v_interno <= initial_v_interno;
-        	    increment_interno <= dout_Addsub;
+                nxt_initial_v <= initial_v_interno;
+        	    nxt_increment <= dout_Addsub;
         	   
         	    fin <= '0';
         	   
@@ -178,8 +180,8 @@ begin
                 ce_addsub <= '0';
                 reset_addsub <= '1';
                 
-                initial_v_interno <= initial_v_interno;
-                increment_interno <= increment_interno;
+                nxt_initial_v <= initial_v_interno;
+                nxt_increment <= increment_interno;
                
                 disp_reg <= (dL, dO, dA, dD); -- "Load"
                 time_out <= initial_v_interno;
@@ -193,8 +195,8 @@ begin
                 ce_addsub <= '0';
                 reset_addsub <= '1';
 
-                initial_v_interno <= initial_v_interno;
-                increment_interno <= increment_interno;
+                nxt_initial_v <= initial_v_interno;
+                nxt_increment <= increment_interno;
                
                 disp_reg <= (dE, dR, dR, dguion); -- "Err-"
                 time_out <= initial_v_interno;

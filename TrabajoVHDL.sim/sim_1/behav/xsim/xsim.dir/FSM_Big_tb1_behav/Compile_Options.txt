@@ -1,1 +1,1 @@
--wto "e456db25c4d341918ff3b08ae520b38a" --incr --debug "typical" --relax --mt "2" -L "work" -L "secureip" --snapshot "FSM_Big_tb1_behav" "work.FSM_Big_tb1" -log "elaborate.log" 
+-wto "e456db25c4d341918ff3b08ae520b38a" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "FSM_Big_tb1_behav" "xil_defaultlib.FSM_Big_tb1" -log "elaborate.log" 

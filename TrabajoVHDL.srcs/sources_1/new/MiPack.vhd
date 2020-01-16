@@ -11,7 +11,7 @@ package Paco is
     type tiempo_t is array(4 downto 0) of integer10; --tiempo formado por 5 números del 1 al 10
     --(decenas de minutos, minutos, decenas de segundos [del 0 al 5], segundos y décima de segundo.
     type gamemode_t is (Sin, Inc); --modo de juego
-    type state_t is (S0, S1, S2, S3, S4, S5);
+    
     
     
     --------------

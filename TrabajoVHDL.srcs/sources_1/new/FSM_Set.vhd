@@ -20,6 +20,7 @@ entity FSM_Set is
            --de 7 segmentos
            gamemode : out gamemode_t;--modo de juego
            
+           
            fin : out std_logic--señal de fin
       );
       
@@ -37,8 +38,10 @@ architecture Behavioral of FSM_Set is
     signal button2_pressed : std_logic;
     signal ok_pressed : std_logic;
     
-    
+    signal gamemode_interno, nxt_gamemode : gamemode_t;
 begin
+
+    gamemode <=  gamemode_interno;
 
     state_reg: process (reset, clk)
     begin
@@ -55,6 +58,7 @@ begin
         	button1_pressed <= button1;--para hacer flancos
         	button2_pressed <= button2;
         	ok_pressed <= ok;
+        	gamemode_interno <= nxt_gamemode;
         end if;
     end process;
     
@@ -101,7 +105,7 @@ begin
         case state is
         	when S0 =>
         	
-        	   gamemode <= Sin;
+        	   nxt_gamemode <= Sin;
                fin <= '0';
                
                disp_reg_1 <= (dguion, dguion, dguion, dguion); -- "----"
@@ -109,7 +113,7 @@ begin
                
         	when S1 =>
         	
-        	   gamemode <= Sin;
+        	   nxt_gamemode <= Sin;
         	   fin <= '0';
         	   
         	   disp_reg_1 <= (d1 & "0", dS, di, dn); -- "1.Sin"
@@ -117,7 +121,7 @@ begin
         	   
         	when S2 =>
         	
-        	   gamemode <= Inc;
+        	   nxt_gamemode <= Inc;
 
         	   disp_reg_1 <= (d2 & "0", di, dn, dc); -- "2.inC"
                disp_reg_2 <= (dguion, dguion, dguion, dguion); -- "----"
@@ -126,6 +130,8 @@ begin
         	   
         	when S5 => 
         	   
+        	   nxt_gamemode <= gamemode_interno;
+        	   
         	   disp_reg_1 <= (dguion, dguion, dguion, dguion); -- "----"
                disp_reg_2 <= (dguion, dguion, dguion, dguion); -- "----"
         	   
@@ -133,7 +139,7 @@ begin
         	   
         	when others =>
         	
-               gamemode <= Sin;
+               nxt_gamemode <= gamemode_interno;
                
                disp_reg_1 <= (dE, dR, dR, dguion); -- "Err-"
                disp_reg_2 <= (dE, dR, dR, dguion); -- "Err-"

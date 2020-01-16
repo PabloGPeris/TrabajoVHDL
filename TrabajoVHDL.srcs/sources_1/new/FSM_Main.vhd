@@ -109,7 +109,7 @@ begin
         end case;
     end process;
     
-    out_dec: process(state) --Cambiarlo por with-select si se cree conveniente
+    out_dec: process (state) --Cambiarlo por with-select si se cree conveniente
     begin
     case state is
         	when S0 =>
@@ -118,6 +118,9 @@ begin
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
+                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;
                 
             when S1=>
             	fin <= '0';
@@ -136,27 +139,36 @@ begin
                 load1 <= '0';
                 load2 <= '0';
                 
-                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;   
+                             
             when S20 =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '0';
                 load1 <= '0';
                 load2 <= '0';
-            
+                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;            
             when S3 =>
                 fin <= '1';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
-                
+
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;                
             when others =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
+
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;                
         end case;
     end process;
 
