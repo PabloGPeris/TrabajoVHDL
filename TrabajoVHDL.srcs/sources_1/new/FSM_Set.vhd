@@ -105,7 +105,7 @@ begin
         case state is
         	when S0 =>
         	
-        	   nxt_gamemode <= Sin;
+        	   nxt_gamemode <= gamemode_interno;
                fin <= '0';
                
                disp_reg_1 <= (dguion, dguion, dguion, dguion); -- "----"

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 17 10:42:21 2020
-# Process ID: 11652
+# Start of session at: Fri Jan 17 11:09:40 2020
+# Process ID: 14440
 # Current directory: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1/Top.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9624 
+INFO: Helper process launched with PID 13708 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 735.477 ; gain = 178.078
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 734.730 ; gain = 177.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:21]
 INFO: [Synth 8-3491] module 'DCM' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:4' bound to instance 'dcmtop' of component 'DCM' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:76]
@@ -135,7 +135,7 @@ WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][2]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][1]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 802.355 ; gain = 244.957
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -148,10 +148,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 802.355 ; gain = 244.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 802.355 ; gain = 244.957
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -163,26 +163,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.426 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 920.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 920.426 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:29]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:29]
@@ -227,7 +227,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_Big'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -403,7 +403,7 @@ WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][1]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][0]
 INFO: [Synth 8-3886] merging instance 'fsmtop/setfsm/ok_pressed_reg' (FDP) to 'fsmtop/addsubfsm/ok_pressed_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -415,13 +415,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 920.867 ; gain = 363.469
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 920.426 ; gain = 363.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -433,7 +433,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 938.922 ; gain = 381.523
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 937.137 ; gain = 379.965
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -457,7 +457,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -470,7 +470,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -482,25 +482,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -519,12 +519,12 @@ Report Cell Usage:
 |1     |BUFG   |     3|
 |2     |CARRY4 |    13|
 |3     |LUT1   |    24|
-|4     |LUT2   |    53|
+|4     |LUT2   |    55|
 |5     |LUT3   |    81|
-|6     |LUT4   |    61|
-|7     |LUT5   |    99|
-|8     |LUT6   |   290|
-|9     |MUXF7  |     6|
+|6     |LUT4   |    63|
+|7     |LUT5   |   104|
+|8     |LUT6   |   280|
+|9     |MUXF7  |     5|
 |10    |FDCE   |    72|
 |11    |FDPE   |    64|
 |12    |FDRE   |    68|
@@ -537,41 +537,41 @@ Report Instance Areas:
 +------+------------------------------------------------+-------------------------------+------+
 |      |Instance                                        |Module                         |Cells |
 +------+------------------------------------------------+-------------------------------+------+
-|1     |top                                             |                               |   915|
-|2     |  dcmtop                                        |xil_defaultlib_DCM             |    87|
-|3     |    cl10                                        |clk_divider__parameterized1    |    15|
+|1     |top                                             |                               |   913|
+|2     |  dcmtop                                        |xil_defaultlib_DCM             |    86|
+|3     |    cl10                                        |clk_divider__parameterized1    |    14|
 |4     |    cl1k                                        |clk_divider                    |    72|
-|5     |  fsmtop                                        |FSM_Big                        |   786|
-|6     |    addsubfsm                                   |FSM_AddSub                     |   330|
-|7     |      addsub                                    |Adder_Subs_Sync                |   256|
-|8     |    mainfsm                                     |FSM_Main                       |   428|
-|9     |      bc1                                       |big_cntr                       |   189|
-|10    |        cntr0                                   |generic_cntr_4                 |    27|
+|5     |  fsmtop                                        |FSM_Big                        |   785|
+|6     |    addsubfsm                                   |FSM_AddSub                     |   328|
+|7     |      addsub                                    |Adder_Subs_Sync                |   253|
+|8     |    mainfsm                                     |FSM_Main                       |   429|
+|9     |      bc1                                       |big_cntr                       |   187|
+|10    |        cntr0                                   |generic_cntr_4                 |    26|
 |11    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_5                 |    40|
-|12    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2_6 |    40|
-|13    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_7                 |    42|
-|14    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_8                 |    40|
-|15    |      bc2                                       |big_cntr_0                     |   231|
+|12    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2_6 |    39|
+|13    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_7                 |    44|
+|14    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_8                 |    38|
+|15    |      bc2                                       |big_cntr_0                     |   234|
 |16    |        cntr0                                   |generic_cntr                   |    35|
-|17    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_1                 |    48|
-|18    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2   |    53|
-|19    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_2                 |    47|
-|20    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_3                 |    48|
+|17    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_1                 |    47|
+|18    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2   |    52|
+|19    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_2                 |    49|
+|20    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_3                 |    51|
 |21    |    setfsm                                      |FSM_Set                        |    23|
 |22    |  muxtop                                        |Mux_7s                         |    18|
 +------+------------------------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:33 . Memory (MB): peak = 944.707 ; gain = 268.797
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 944.707 ; gain = 387.309
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 942.922 ; gain = 266.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 961.199 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 945.309 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 60 instances were transformed.
   LDC => LDCE: 60 instances
@@ -579,10 +579,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 97 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 961.199 ; gain = 666.469
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 961.199 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 945.309 ; gain = 646.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 945.309 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 10:43:12 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 11:10:28 2020...

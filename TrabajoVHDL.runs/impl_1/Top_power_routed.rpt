@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Fri Jan 17 10:49:42 2020
+| Date             : Fri Jan 17 11:11:41 2020
 | Host             : DESKTOP-VV8ADDO running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
 | Design           : Top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 36.763 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 36.990 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 35.966                           |
+| Dynamic (W)              | 36.193                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     2.538 |      928 |       --- |             --- |
-|   LUT as Logic |     2.395 |      533 |     63400 |            0.84 |
-|   CARRY4       |     0.082 |       13 |     15850 |            0.08 |
-|   Register     |     0.042 |      264 |    126800 |            0.21 |
-|   F7/F8 Muxes  |     0.012 |        6 |     63400 |           <0.01 |
+| Slice Logic    |     2.508 |      926 |       --- |             --- |
+|   LUT as Logic |     2.371 |      534 |     63400 |            0.84 |
+|   CARRY4       |     0.081 |       13 |     15850 |            0.08 |
+|   Register     |     0.039 |      264 |    126800 |            0.21 |
+|   F7/F8 Muxes  |     0.010 |        5 |     63400 |           <0.01 |
 |   BUFG         |     0.006 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       34 |       --- |             --- |
-| Signals        |     2.805 |      770 |       --- |             --- |
-| I/O            |    30.624 |       21 |       210 |           10.00 |
+| Signals        |     2.768 |      772 |       --- |             --- |
+| I/O            |    30.918 |       21 |       210 |           10.00 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    36.763 |          |           |                 |
+| Total          |    36.990 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     5.921 |       5.358 |      0.563 |
-| Vccaux    |       1.800 |     1.214 |       1.122 |      0.093 |
-| Vcco33    |       3.300 |     8.667 |       8.663 |      0.004 |
+| Vccint    |       1.000 |     5.854 |       5.291 |      0.563 |
+| Vccaux    |       1.800 |     1.225 |       1.132 |      0.093 |
+| Vcco33    |       3.300 |     8.751 |       8.747 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,18 +139,18 @@ Table of Contents
 +---------------+-----------+
 | Name          | Power (W) |
 +---------------+-----------+
-| Top           |    35.966 |
-|   dcmtop      |     0.969 |
-|     cl10      |     0.109 |
-|     cl1k      |     0.860 |
-|   fsmtop      |     3.663 |
-|     addsubfsm |     1.703 |
-|       addsub  |     1.123 |
-|     mainfsm   |     1.652 |
-|       bc1     |     0.630 |
-|       bc2     |     0.974 |
-|     setfsm    |     0.220 |
-|   muxtop      |     0.680 |
+| Top           |    36.193 |
+|   dcmtop      |     0.949 |
+|     cl10      |     0.106 |
+|     cl1k      |     0.843 |
+|   fsmtop      |     3.609 |
+|     addsubfsm |     1.646 |
+|       addsub  |     1.067 |
+|     mainfsm   |     1.655 |
+|       bc1     |     0.541 |
+|       bc2     |     1.071 |
+|     setfsm    |     0.209 |
+|   muxtop      |     0.682 |
 +---------------+-----------+
 
 

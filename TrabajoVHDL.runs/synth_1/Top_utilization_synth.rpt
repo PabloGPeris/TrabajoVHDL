@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 17 10:43:12 2020
+| Date         : Fri Jan 17 11:10:28 2020
 | Host         : DESKTOP-VV8ADDO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
 | Design       : Top
@@ -36,7 +36,7 @@ Table of Contents
 | Slice Registers         |  264 |     0 |    126800 |  0.21 |
 |   Register as Flip Flop |  204 |     0 |    126800 |  0.16 |
 |   Register as Latch     |   60 |     0 |    126800 |  0.05 |
-| F7 Muxes                |    6 |     0 |     31700 |  0.02 |
+| F7 Muxes                |    5 |     0 |     31700 |  0.02 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -146,19 +146,19 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  290 |                 LUT |
-| LUT5     |   99 |                 LUT |
+| LUT6     |  280 |                 LUT |
+| LUT5     |  104 |                 LUT |
 | LUT3     |   81 |                 LUT |
 | FDCE     |   72 |        Flop & Latch |
 | FDRE     |   68 |        Flop & Latch |
 | FDPE     |   64 |        Flop & Latch |
-| LUT4     |   61 |                 LUT |
+| LUT4     |   63 |                 LUT |
 | LDCE     |   60 |        Flop & Latch |
-| LUT2     |   53 |                 LUT |
+| LUT2     |   55 |                 LUT |
 | LUT1     |   24 |                 LUT |
 | OBUF     |   16 |                  IO |
 | CARRY4   |   13 |          CarryLogic |
-| MUXF7    |    6 |               MuxFx |
+| MUXF7    |    5 |               MuxFx |
 | IBUF     |    5 |                  IO |
 | BUFG     |    3 |               Clock |
 +----------+------+---------------------+

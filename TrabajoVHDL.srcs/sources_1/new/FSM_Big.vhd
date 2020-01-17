@@ -244,9 +244,9 @@ begin
                 disp_reg2 <= dout_dec2;
                 
             when others =>
-                reset_set <= '1';
-                reset_addsub <= '1';
-                reset_main <= '1';
+                reset_set <= '0';
+                reset_addsub <= '0';
+                reset_main <= '0';
                 
                 start_set <= '0';
                 start_addsub <= '0';
