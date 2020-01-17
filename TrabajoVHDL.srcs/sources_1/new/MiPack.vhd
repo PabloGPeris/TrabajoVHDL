@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-package Paco is
+package mipack is
 
     --------------------
     --tipos y subtipos--
@@ -161,18 +161,59 @@ package Paco is
       );
     end component;
     
+    
+    component Edge_generator is
+    --detector síncrono de flancos
+    Port ( input : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           output : out STD_LOGIC);
+    end component;
+    
+    component Input_edge_generator is
+    --generador de flancos de TODAS las entradas
+    Port ( ok : in STD_LOGIC;
+           button1 : in STD_LOGIC;
+           button2 : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           
+           ok_re : out STD_LOGIC;--ok con rising_edge
+           button1_re : out STD_LOGIC;--button1 con rising_edge
+           button2_re : out STD_LOGIC);--button2 con rising_edge
+    end component;
+    
+    
+    component DCM is
+    --generador de relojes sencillo, de dos frecuencias de salida
+    Port ( clk100M : in STD_LOGIC;--100MHZ
+           reset: in std_logic;
+           clk1k : out STD_LOGIC;--1kHz
+           clk10 : out STD_LOGIC);--1Hz
+    end component;
+    
+    component Mux_7s is
+    --multiplexor de salida para los displays 7 segmentos
+    Port (
+        clk: in std_logic; --reloj de 1kHz
+        reg1: in disp_reg_t; --registro de 4 std_logic_vector(7 downto 0) de muestra
+        reg2: in disp_reg_t;
+    
+        led: out std_logic_vector(7 downto 0); --leds que se encienden del display 7 segmentos
+        digctrl: out std_logic_vector(7 downto 0) --7 segmentos que se enciende
+    );
+    end component;
     ----------------------------
     --máquinas de estado (FSM)--
     ----------------------------
     
     component FSM_Set is
+    --FSM que se encarga de la selección de modo de juego
     port(
            start : in std_logic;--señal de inicio
            
            reset : in STD_LOGIC;--botón de reset
-           ok : in std_logic;--botón de ok
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
+           ok_re : in std_logic;--botón de ok POR FLANCO
+           button1_re : in STD_LOGIC;--POR FLANCO
+           button2_re : in STD_LOGIC;--POR FLANCO
            clk : in std_logic;--reloj (1 kHz)
            
            disp_reg_1: out disp_reg_t;--lo que muestra el primer cuarteto
@@ -191,9 +232,9 @@ package Paco is
            start : in std_logic;--señal de inicio
            
            reset : in STD_LOGIC;--botón reset
-           ok : in std_logic;--botón ok
-           button1 : in STD_LOGIC;--botón 1 (decremento)
-           button2 : in STD_LOGIC;--botón 2 (incremento)
+           ok_re : in std_logic;--botón ok Con flanco
+           button1 : in STD_LOGIC;--botón 1 (decremento) SIN FLANCO
+           button2 : in STD_LOGIC;--botón 2 (incremento) SIN FLANCO
            gamemode : in gamemode_t;
            clk10 : in std_logic;
            clk1k: in std_logic;
@@ -208,13 +249,14 @@ package Paco is
     end component;
     
     component FSM_Main is
+    --máquina de estador principal, donde los relojes van bajando en su tiempo
     Port ( 
            start : in STD_LOGIC;--señal de inicio
            
            reset : in STD_LOGIC; --botón reset
            button1 : in STD_LOGIC;--botón 1
            button2 : in STD_LOGIC;--botón 2
-           ok : in std_logic;
+           ok : in std_logic;--botón ok por flanco
            clk1k : in STD_LOGIC;--reloj de 1kHz (para la FSM)
            clk10 : in STD_LOGIC;--reloj de 10 Hz (para la temporización)
            initial_v : in tiempo_t; --tiempo inicial
@@ -227,11 +269,28 @@ package Paco is
            fin : out std_logic--señal de fin
            );
     end component;
-end Paco;
+    
+    component FSM_Big is
+    --Máquina de estados maestra, que gobierna y comunica las otras 3
+    Port (
+           reset : in STD_LOGIC;
+           ok_re : in std_logic;--por flanco
+           button1_re : in STD_LOGIC;--por flanco
+           button2_re : in STD_LOGIC;--por flanco
+           button1 : in STD_LOGIC;--no flanco
+           button2 : in STD_LOGIC;--no flanco
+           clk10 : in std_logic;
+           clk1k: in std_logic;
+           
+           disp_reg1: out disp_reg_t;
+           disp_reg2: out disp_reg_t
+    );
+    end component;
+end mipack;
 
 
 
-package body Paco is
+package body mipack is
     function isgreater(din1, din2: tiempo_t) return std_logic is
     begin
     ff: for i in 4 downto 0 loop

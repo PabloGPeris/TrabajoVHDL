@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.Paco.all;
+use work.MiPack.all;
 
 
 entity FSM_Main is
     Port ( 
         start : in STD_LOGIC;
         
-        reset : in STD_LOGIC;
-        button1 : in STD_LOGIC;
-        button2 : in STD_LOGIC;
+        reset : in STD_LOGIC; --Por flanco, aunque no obligatorio
+        button1 : in STD_LOGIC; --Por flanco, aunque no obligatorio 
+        button2 : in STD_LOGIC; -- Por flanco, aunque no obligatorio
         ok : in std_logic;
         clk1k : in STD_LOGIC;
         clk10 : in std_logic;
@@ -26,7 +26,7 @@ end FSM_Main;
 
 architecture Behavioral of FSM_Main is
     
-    type state_t is (S0, S1, S10, S20, S11, S21, S3, S4); -- FSM
+    type state_t is (S0, S1, S10, S20, S11, S21, S12, S22, S13, S23, S3, S4); -- FSM
 
     
     signal state: state_t;
@@ -94,11 +94,11 @@ begin
         end if;
     end process;
     
-    nxt_dec: process (state, start, button1, button2, rdy1, rdy2)
+    nxt_dec: process (state, start, button1, button2, rdy1, rdy2, ok)
     begin
     	nxt_state <= state; --evitar latch
         case state is
-        
+            --estados iniciales
         	when S0 =>
         	    if start = '1' then
         	       nxt_state <= S1;
@@ -108,47 +108,63 @@ begin
             when S1 =>
             	if button2 = '1' then
             	    if gamemode = Sin then
-                        nxt_state <= S11;
+                        nxt_state <= S13;
                     else --inc
                         nxt_state <= S10;
                     end if;
                 elsif button1 = '1' then
                     if gamemode = Sin then
-                        nxt_state <= S21;
+                        nxt_state <= S23;
                     else --inc
                         nxt_state <= S20;
                     end if;
                 end if;
+                
+            --estados cuando hay incremento (gamemode = Inc)
                 
             when S10 =>
                 nxt_state <= S11;
                 
             when S20 =>
-                nxt_state <= S21;                
+                nxt_state <= S21;            
                 
             when S11 =>
+                nxt_state <= S12;
+                
+            when S21 =>
+                nxt_state <= S22;   
+                
+             when S12 =>
+                nxt_state <= S13;
+                
+            when S22 =>
+                nxt_state <= S23;       
+            
+            --estados generales comunes (cuenta atrás) 
+            when S13 =>
             
                 if rdy1 = '1' then
                     nxt_state <= S3;
             	elsif button1 = '1' then
                     if gamemode = Sin then
-                        nxt_state <= S21;
+                        nxt_state <= S23;
                     else --inc
                         nxt_state <= S20;
                     end if;
                 end if;
                 
-            when S21 => 
+            when S23 => 
                 if rdy2 = '1' then
                     nxt_state <= S3;
             	elsif button2 = '1' then
             	    if gamemode = Sin then
-                        nxt_state <= S11;
+                        nxt_state <= S13;
                     else --inc
                         nxt_state <= S10;
                     end if;
                 end if;
             
+            --estados finales
             when S3 =>
             if OK = '1' then
                 nxt_state <= S4;
@@ -162,9 +178,10 @@ begin
         end case;
     end process;
     
-    out_dec: process (state, load_v1, load_v2) 
+    out_dec: process (state, load_v1, load_v2, clk1k, ok) 
     begin
     case state is
+            --estados iniciales    
         	when S0 =>
                 fin <= '0';
                 ce_n1 <= '1';
@@ -191,54 +208,118 @@ begin
                 
                 din_adder1 <= initial_v;
                 
+            --estados cuando hay incremento (gamemode = Inc)            
             when S10 =>
+            	fin <= '0';
+                ce_n1 <= '1';
+                ce_n2 <= '1';
+                load1 <= '0';
+                load2 <= '0';
+                
+
+                nxt_load_v1 <= dout_adder1;
+                nxt_load_v2 <= time_interno2;
+
+                
+                din_adder1 <= time_interno1;
+                
+            when S11 =>
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '1';
                 load2 <= '0';
                 
+
                 nxt_load_v1 <= dout_adder1;
-                nxt_load_v2 <= dout_adder1;
+                nxt_load_v2 <= time_interno2;
+
+                
+                din_adder1 <= time_interno1;           
+                
+            when S12 =>
+            	fin <= '0';
+                ce_n1 <= '1';
+                ce_n2 <= '1';
+                load1 <= '0';
+                load2 <= '0';
+                
+
+                nxt_load_v1 <= dout_adder1;
+                nxt_load_v2 <= time_interno2;
+
                 
                 din_adder1 <= time_interno1;
                 
-            when S20 =>
+           when S20 =>
+            	fin <= '0';
+                ce_n1 <= '1';
+                ce_n2 <= '1';
+                load1 <= '0';
+                load2 <= '0';
+                
+
+                nxt_load_v1 <= time_interno1;
+                nxt_load_v2 <= dout_adder1;
+
+                
+                din_adder1 <= time_interno2;
+                
+            when S21 =>
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '1';
                 
-                nxt_load_v1 <= dout_adder1;
+
+                nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= dout_adder1;
+
                 
-                din_adder1 <= time_interno2;   
+                din_adder1 <= time_interno2;          
+                
+            when S22 =>
+            	fin <= '0';
+                ce_n1 <= '1';
+                ce_n2 <= '1';
+                load1 <= '0';
+                load2 <= '0';
+                
+
+                nxt_load_v1 <= time_interno1;
+                nxt_load_v2 <= dout_adder1;
+
+                
+                din_adder1 <= time_interno2;           
+            
+            --estados generales comunes (cuenta atrás)    
                              
-            when S11 =>
+            when S13 =>
             	fin <= '0';
                 ce_n1 <= '0';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
                 
-                nxt_load_v1 <= dout_adder1;
-                nxt_load_v2 <= dout_adder1;   
+                nxt_load_v1 <= time_interno1;
+                nxt_load_v2 <= time_interno2;   
                 
-                din_adder1 <= time_interno2;
+                din_adder1 <= initial_v;
                           
-            when S21 =>
+            when S23 =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '0';
                 load1 <= '0';
                 load2 <= '0';
                 
-                nxt_load_v1 <= dout_adder1;
-                nxt_load_v2 <= dout_adder1;
+                nxt_load_v1 <= time_interno1;
+                nxt_load_v2 <= time_interno2;
                   
-                din_adder1 <= time_interno1;   
-                                       
+                din_adder1 <= initial_v;   
+                
+            --estados finales                           
             when S3 =>
                 fin <= '0';
                 ce_n1 <= '1';

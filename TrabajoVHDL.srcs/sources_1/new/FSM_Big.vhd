@@ -1,14 +1,16 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.Paco.all;
+use work.MiPack.all;
 
 entity FSM_Big is
   Port (
            reset : in STD_LOGIC;
-           ok : in std_logic;
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
+           ok_re : in std_logic;--por flanco
+           button1_re : in STD_LOGIC;--por flanco
+           button2_re : in STD_LOGIC;--por flanco
+           button1 : in STD_LOGIC;--no flanco
+           button2 : in STD_LOGIC;--no flanco
            clk10 : in std_logic;
            clk1k: in std_logic;
            
@@ -51,9 +53,9 @@ begin
            start => start_set,
            
            reset => reset or reset_set,
-           ok => ok,
-           button1 => button1,
-           button2 => button2,
+           ok_re => ok_re,
+           button1_re => button1_re,
+           button2_re => button2_re,
            clk => clk1k,
            
            disp_reg_1 => disp_reg_set1,
@@ -68,7 +70,7 @@ begin
            start => start_addsub,
            
            reset => reset or reset_addsub,
-           ok => ok,
+           ok_re => ok_re,
            button1 => button1,
            button2 => button2,
            gamemode => gamemode,
@@ -88,9 +90,9 @@ begin
         start => start_main,
         
         reset => reset or reset_main,
-        button1 => button1,
-        button2 => button2,
-        ok => ok,
+        button1 => button1_re,
+        button2 => button2_re,
+        ok => ok_re,
         clk1k => clk1k,
         clk10 => clk10,
         initial_v => initial_v,

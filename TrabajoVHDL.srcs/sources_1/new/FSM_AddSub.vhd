@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.Paco.all;
+use work.MiPack.all;
 
 
 entity FSM_AddSub is
@@ -9,9 +9,9 @@ entity FSM_AddSub is
            start : in std_logic;--señal de inicio
            
            reset : in STD_LOGIC;--botón reset
-           ok : in std_logic;--botón ok
-           button1 : in STD_LOGIC;--botón 1 (decremento)
-           button2 : in STD_LOGIC;--botón 2 (incremento)
+           ok_re : in std_logic;--botón ok Con flanco
+           button1 : in STD_LOGIC;--botón 1 (decremento) SIN FLANCO
+           button2 : in STD_LOGIC;--botón 2 (incremento) SIN FLANCO
            gamemode : in gamemode_t;
            clk10 : in std_logic;
            clk1k: in std_logic;
@@ -33,7 +33,6 @@ architecture Behavioral of FSM_AddSub is
     signal state: Set_state_t;
     signal nxt_state: Set_state_t;
     
-    signal ok_pressed: std_logic; --para flanco
     
     --cosas de sumadores y restadores
     signal din_addsub1, din_addsub2, dout_addsub : tiempo_t;
@@ -62,18 +61,17 @@ begin
     begin
     	if reset = '1' then 
         	state <= S0;
-        	ok_pressed <= '1';
+
         elsif rising_edge(clk1k) then
         	state <= nxt_state;
         	initial_v_interno <= nxt_initial_v;
         	increment_interno <= nxt_increment;
-        	ok_pressed <= ok;
         end if;
     end process;
     
 
     
-    nxt_dec: process (state, start, ok)
+    nxt_dec: process (state, start, ok_re)
     begin
     	nxt_state <= state; 
         case state is
@@ -84,7 +82,7 @@ begin
         	   end if;
         	   
         	when S1 =>
-        	   if ok = '1' and ok_pressed = '0' then 
+        	   if ok_re = '1' then 
         	       if gamemode = Inc then
         	           nxt_state <= S2;
         	       else
@@ -96,7 +94,7 @@ begin
         	   nxt_state <= S3;
         	
         	when S3 =>
-        	   if ok = '1' and ok_pressed = '0' then
+        	   if ok_re = '1' then
         	       nxt_state <= S4;
         	   end if;
 

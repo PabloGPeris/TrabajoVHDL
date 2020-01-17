@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.Paco.all;
+use work.MiPack.all;
 
 
 entity FSM_Set is
@@ -9,9 +9,9 @@ entity FSM_Set is
            start : in std_logic;--señal de inicio
            
            reset : in STD_LOGIC;--botón de reset
-           ok : in std_logic;--botón de ok
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
+           ok_re : in std_logic;--botón de ok POR FLANCO
+           button1_re : in STD_LOGIC;--POR FLANCO
+           button2_re : in STD_LOGIC;--POR FLANCO
            clk : in std_logic;--reloj (1 kHz)
            
            disp_reg_1: out disp_reg_t;--lo que muestra el primer cuarteto
@@ -33,10 +33,6 @@ architecture Behavioral of FSM_Set is
     signal state: Set_state_t;
     signal nxt_state: Set_state_t;
     
-    --variables para poder hacer flancos
-    signal button1_pressed : std_logic;
-    signal button2_pressed : std_logic;
-    signal ok_pressed : std_logic;
     
     signal gamemode_interno, nxt_gamemode : gamemode_t;
 begin
@@ -48,23 +44,18 @@ begin
     	if reset = '1' then 
         	state <= S0;
         	
-        	button1_pressed <= '1';--separar esto
-        	button2_pressed <= '1';
-        	ok_pressed <= '1';
+
         	
         elsif rising_edge(clk) then
         	state <= nxt_state;
+        	gamemode_interno <= nxt_gamemode;--HAY QUE HACER ESTO PARA EVITAR LATCH
         	
-        	button1_pressed <= button1;--para hacer flancos
-        	button2_pressed <= button2;
-        	ok_pressed <= ok;
-        	gamemode_interno <= nxt_gamemode;
         end if;
     end process;
     
 
     
-    nxt_dec: process (state, start, ok, button1, button2)
+    nxt_dec: process (state, start, ok_re, button1_re, button2_re)
     begin
     	nxt_state <= state; 
         case state is
@@ -74,20 +65,20 @@ begin
         	   end if;
         	   
         	when S1 =>
-        	   if button1 = '1' and button1_pressed = '0' then--flanco de subida de button1
+        	   if button1_re = '1' then--flanco de subida de button1
         	       nxt_state <= S2;
-        	   elsif button2 = '1' and button2_pressed = '0' then--flanco de subida de button2
+        	   elsif button2_re = '1' then--flanco de subida de button2
         	       nxt_state <= S2;
-        	   elsif ok = '1' and ok_pressed = '0' then--flanco de subida de ok
+        	   elsif ok_re = '1' then--flanco de subida de ok
         	       nxt_state <= S5;
         	   end if;
         	
         	when S2 =>
-        	   if button1 = '1' and button1_pressed = '0' then--flanco de subida de button1
+        	   if button1_re = '1'  then--flanco de subida de button1
         	       nxt_state <= S1;
-        	   elsif button2 = '1' and button2_pressed = '0' then--flanco de subida de button2
+        	   elsif button2_re = '1' then--flanco de subida de button2
         	       nxt_state <= S1;
-        	   elsif ok = '1' and ok_pressed = '0' then--flanco de subida de ok
+        	   elsif ok_re = '1' then--flanco de subida de ok
         	       nxt_state <= S5;
         	   end if;
 

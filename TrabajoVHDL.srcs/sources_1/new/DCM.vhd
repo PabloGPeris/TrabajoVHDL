@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity DCM is
-    Port ( clk1M : in STD_LOGIC;
+    Port ( clk100M : in STD_LOGIC;
            reset: in std_logic;
            clk1k : out STD_LOGIC;
            clk10 : out STD_LOGIC);
@@ -28,7 +28,7 @@ begin
         smodule => 50000
     )
     Port map ( 
-        clk_in => clk1M,
+        clk_in => clk100M,
         reset => reset,
         clk_out => clk1k_interno
     );

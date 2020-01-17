@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
  --sumador de integer 10;
-use work.Paco.all;
+use work.MiPack.all;
 
 entity adder_integer10 is
   Generic(
