@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Jan 16 14:27:16 2020
+| Date         : Fri Jan 17 10:49:43 2020
 | Host         : DESKTOP-VV8ADDO running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Top_timing_summary_routed.rpt -pb Top_timing_summary_routed.pb -rpx Top_timing_summary_routed.rpx -warn_on_violation
 | Design       : Top
@@ -53,13 +53,13 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 14 register/latch pins with no clock driven by root clock pin: clk1M (HIGH)
+ There are 17 register/latch pins with no clock driven by root clock pin: clk1M (HIGH)
 
  There are 20 register/latch pins with no clock driven by root clock pin: reset (HIGH)
 
  There are 120 register/latch pins with no clock driven by root clock pin: dcmtop/cl10/clk_out_sig_reg/Q (HIGH)
 
- There are 48 register/latch pins with no clock driven by root clock pin: dcmtop/cl1k/clk_out_sig_reg/Q (HIGH)
+ There are 67 register/latch pins with no clock driven by root clock pin: dcmtop/cl1k/clk_out_sig_reg/Q (HIGH)
 
  There are 20 register/latch pins with no clock driven by root clock pin: fsmtop/FSM_sequential_state_reg[0]/Q (HIGH)
 
@@ -67,11 +67,11 @@ Table of Contents
 
  There are 20 register/latch pins with no clock driven by root clock pin: fsmtop/FSM_sequential_state_reg[2]/Q (HIGH)
 
- There are 40 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[0]/Q (HIGH)
+ There are 20 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[0]/Q (HIGH)
 
- There are 60 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[1]/Q (HIGH)
+ There are 20 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[1]/Q (HIGH)
 
- There are 60 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[2]/Q (HIGH)
+ There are 20 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/FSM_sequential_state_reg[2]/Q (HIGH)
 
  There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/increment_interno_reg[0][0]/Q (HIGH)
 
@@ -113,91 +113,47 @@ Table of Contents
 
  There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/increment_interno_reg[4][3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][0]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][1]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][2]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][3]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[0][3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][0]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][1]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][2]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][3]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[1][3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][0]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][1]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][2]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][3]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[2][3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][0]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][1]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][2]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][3]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[3][3]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][0]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][0]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][1]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][1]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][2]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][2]/Q (HIGH)
 
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][3]/Q (HIGH)
+ There are 3 register/latch pins with no clock driven by root clock pin: fsmtop/addsubfsm/initial_v_interno_reg[4][3]/Q (HIGH)
 
- There are 60 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/FSM_onehot_state_reg[1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[0][0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[0][1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[0][2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[0][3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[1][0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[1][1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[1][2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[1][3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[2][0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[2][1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[2][2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[2][3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[3][0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[3][1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[3][2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[3][3]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[4][0]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[4][1]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[4][2]/Q (HIGH)
-
- There are 2 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/load_v1_reg[4][3]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/setfsm/state_reg[0]/Q (HIGH)
-
- There is 1 register/latch pin with no clock driven by root clock pin: fsmtop/setfsm/state_reg[1]/Q (HIGH)
+ There are 40 register/latch pins with no clock driven by root clock pin: fsmtop/mainfsm/FSM_onehot_state_reg[1]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -212,7 +168,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 492 pins that are not constrained for maximum delay. (HIGH)
+ There are 520 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -260,7 +216,7 @@ Table of Contents
 
 12. checking latch_loops
 ------------------------
- There are 40 combinational latch loops in the design through latch input (HIGH)
+ There are 0 combinational latch loops in the design through latch input
 
 
 

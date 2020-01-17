@@ -25,7 +25,7 @@ architecture Structural of DCM is
 begin
     cl1k: clk_divider 
     generic map(
-        smodule => 5000
+        smodule => 50000
     )
     Port map ( 
         clk_in => clk1M,
