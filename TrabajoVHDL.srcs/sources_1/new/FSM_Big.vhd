@@ -90,9 +90,12 @@ begin
         reset => reset or reset_main,
         button1 => button1,
         button2 => button2,
+        ok => ok,
         clk1k => clk1k,
         clk10 => clk10,
         initial_v => initial_v,
+        increment => increment,
+        gamemode => gamemode,
            
         time_out1 => time_out_main1,
         time_out2 => time_out_main2,

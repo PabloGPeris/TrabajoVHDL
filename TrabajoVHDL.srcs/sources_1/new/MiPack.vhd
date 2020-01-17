@@ -214,10 +214,13 @@ package Paco is
            reset : in STD_LOGIC; --botón reset
            button1 : in STD_LOGIC;--botón 1
            button2 : in STD_LOGIC;--botón 2
+           ok : in std_logic;
            clk1k : in STD_LOGIC;--reloj de 1kHz (para la FSM)
            clk10 : in STD_LOGIC;--reloj de 10 Hz (para la temporización)
            initial_v : in tiempo_t; --tiempo inicial
-           
+           increment: in tiempo_t;
+           gamemode : in gamemode_t;
+                   
            time_out1 : out tiempo_t;--tiempo del jugador 1
            time_out2 : out tiempo_t;--tiempo del jugador 2
            

@@ -68,7 +68,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/pablo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-15152-DESKTOP-VV8ADDO/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/pablo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13508-DESKTOP-VV8ADDO/incrSyn
   set_param xicom.use_bs_reader 1
   open_checkpoint Top_routed.dcp
   set_property webtalk.parent_dir {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.cache/wt} [current_project]
