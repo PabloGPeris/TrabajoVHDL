@@ -1,0 +1,27 @@
+# compile vhdl design source files
+vhdl2008 work  \
+"../../../../TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/Cosas_7s_tb.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/imports/new/Debouncer.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/FAS_TB.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/FSM_Main_tb_v1.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/FSM_Set_tb.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/imports/new/Sincronizador.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/add_cntr_tb.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sim_1/new/big_cntr_tb.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+Running: xsim.dir/FAS_behav/xsimk.exe -simmode gui -wdb FAS_behav.wdb -simrunnum 0 -socket 58607
+Design successfully loaded
+Design Loading Memory Usage: 5308 KB (Peak: 5308 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 13936 KB (Peak: 13936 KB)
+Simulation CPU Usage: 186 ms

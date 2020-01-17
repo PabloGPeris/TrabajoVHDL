@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl2008 work  \
+"../../../../TrabajoVHDL.srcs/sources_1/new/MiPack.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd" \
+"../../../../TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd" \
+
+# Do not sort compile order
+nosort

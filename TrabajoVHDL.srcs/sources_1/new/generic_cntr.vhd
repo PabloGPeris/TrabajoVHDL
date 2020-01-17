@@ -1,12 +1,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.MiPack.all;
+use work.Paco.all;
 
 
 
 entity generic_cntr is
     Generic (
-        state_num : positive:= 10 --SEMIPERIODO
+        state_num : positive:= 10 --
     );
     Port ( clk : in STD_LOGIC;
            ce_n : in STD_LOGIC;--clk enable

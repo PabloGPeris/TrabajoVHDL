@@ -1,10 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use ieee.std_logic_unsigned.all; 
-use ieee.numeric_std.all;
-use ieee.math_real.all;
+
  --sumador de integer 10;
-use work.mipack.all;
+use work.Paco.all;
 
 entity adder_integer10 is
   Generic(

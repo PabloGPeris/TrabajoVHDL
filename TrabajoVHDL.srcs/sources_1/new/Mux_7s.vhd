@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-use work.MiPack.all;
+use work.Paco.all;
 
 
 entity Mux_7s is
@@ -44,14 +44,14 @@ begin
     
     --multiplexación led
     with mux_signal select
-    led <=      reg1(0) when 0,
-                reg1(1) when 1,
-                reg1(2) when 2,
-                reg1(3) when 3,
-                reg2(0) when 4,
-                reg2(1) when 5,
-                reg2(2) when 6,
-                reg2(3) when others;
+    led <=      reg2(0) when 0,
+                reg2(1) when 1,
+                reg2(2) when 2,
+                reg2(3) when 3,
+                reg1(0) when 4,
+                reg1(1) when 5,
+                reg1(2) when 6,
+                reg1(3) when others;
 
     --digctrl <= reg(mux_signal);
 

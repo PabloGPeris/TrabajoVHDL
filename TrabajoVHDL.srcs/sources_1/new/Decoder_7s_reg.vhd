@@ -1,11 +1,11 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.MiPack.all;
+use work.Paco.all;
 
 entity Decoder_7s_reg is
   Port (
-        state: in tiempo_t;
+        time_in: in tiempo_t;
   
         reg_out: out disp_reg_t 
     );
@@ -18,7 +18,7 @@ begin
     for i in 1 to 4 generate
         decn: Decoder_7s
         Port map(
-            num_in => state(i),
+            num_in => time_in(i),
             dot => dot(i - 1),
         
             led_out => reg_out(i - 1)

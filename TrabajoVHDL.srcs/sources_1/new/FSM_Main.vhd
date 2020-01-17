@@ -1,22 +1,24 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.MiPack.all;
+use work.Paco.all;
 
 
 entity FSM_Main is
-    Port ( reset : in STD_LOGIC;
-           start : in std_logic;
-           button1 : in STD_LOGIC;
-           button2 : in STD_LOGIC;
-           clk1k : in STD_LOGIC;
-           clk10 : in std_logic;
-           initial_v : in tiempo_t;
+    Port ( 
+        start : in STD_LOGIC;
+        
+        reset : in STD_LOGIC;
+        button1 : in STD_LOGIC;
+        button2 : in STD_LOGIC;
+        clk1k : in STD_LOGIC;
+        clk10 : in std_logic;
+        initial_v : in tiempo_t;
            
-           disp_reg_1: out disp_reg_t;
-           disp_reg_2: out disp_reg_t;
+        time_out1: out tiempo_t;
+        time_out2: out tiempo_t;
            
-           fin : out std_logic
-           );---------
+        fin : out std_logic
+        );   
 end FSM_Main;
 
 architecture Behavioral of FSM_Main is
@@ -30,7 +32,6 @@ architecture Behavioral of FSM_Main is
     signal ce_n1, ce_n2: std_logic;
     signal load1, load2: std_logic;
     signal load_v1, load_v2: tiempo_t;
-    signal time_out1, time_out2: tiempo_t;
     signal rdy1, rdy2: std_logic;
 begin
     bc1: big_cntr
@@ -57,19 +58,7 @@ begin
     
     );
     
-    dec1: Decoder_7s_reg
-    Port map(
-        state => time_out1,
-        
-        reg_out => disp_reg_1
-    );
-    
-    dec2: Decoder_7s_reg
-    Port map(
-        state => time_out2,
-        
-        reg_out => disp_reg_2
-    );
+
     
     
 	state_reg: process (reset, clk1k)
@@ -120,7 +109,7 @@ begin
         end case;
     end process;
     
-    out_dec: process(state) --Cambiarlo por with-select si se cree conveniente
+    out_dec: process (state) --Cambiarlo por with-select si se cree conveniente
     begin
     case state is
         	when S0 =>
@@ -129,6 +118,9 @@ begin
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
+                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;
                 
             when S1=>
             	fin <= '0';
@@ -147,27 +139,36 @@ begin
                 load1 <= '0';
                 load2 <= '0';
                 
-                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;   
+                             
             when S20 =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '0';
                 load1 <= '0';
                 load2 <= '0';
-            
+                
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;            
             when S3 =>
                 fin <= '1';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
-                
+
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;                
             when others =>
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
                 load1 <= '0';
                 load2 <= '0';
+
+                load_v1 <= initial_v;
+                load_v2 <= initial_v;                
         end case;
     end process;
 

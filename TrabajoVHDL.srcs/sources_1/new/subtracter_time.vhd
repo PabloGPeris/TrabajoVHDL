@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.mipack.all;
+use work.Paco.all;
 
 entity substracter_time is
   Port ( 
