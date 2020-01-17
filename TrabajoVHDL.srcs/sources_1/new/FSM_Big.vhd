@@ -48,22 +48,24 @@ architecture Behavioral of FSM_Big is
     
 begin
 
-    setfsm: FSM_Set
-    port map(
-           start => start_set,
+    gamemode <= Sin;
+--      SI ESTO ESTÁ COMENTADO ES PORQUE NO FUNCIONA LO PREVISTO AL PRINCIPIO 
+--    setfsm: FSM_Set
+--    port map(
+--           start => start_set,
            
-           reset => reset or reset_set,
-           ok_re => ok_re,
-           button1_re => button1_re,
-           button2_re => button2_re,
-           clk => clk1k,
+--           reset => reset or reset_set,
+--           ok_re => ok_re,
+--           button1_re => button1_re,
+--           button2_re => button2_re,
+--           clk => clk1k,
            
-           disp_reg_1 => disp_reg_set1,
-           disp_reg_2 => disp_reg_set2,
-           gamemode => gamemode,
+--           disp_reg_1 => disp_reg_set1,
+--           disp_reg_2 => disp_reg_set2,
+--           gamemode => gamemode,
            
-           fin => fin_set
-      );   
+--           fin => fin_set
+--      );   
       
       addsubfsm: FSM_AddSub
       port map(
@@ -136,15 +138,18 @@ begin
         case state is
         
             when S0 =>
-        	    nxt_state <= S1;
+--              cosas que solo ocurren si no funciona
+--        	    nxt_state <= S1;
+        	    nxt_state <= S3;        	    
+
         	    
-        	when S1 =>
-                if fin_set = '1' then
-                    nxt_state <= S2;
-                end if;
+--        	when S1 =>
+--                if fin_set = '1' then
+--                    nxt_state <= S2;
+--                end if;
                 
-        	when S2 =>
-        	    nxt_state <= S3;
+--        	when S2 =>
+--        	    nxt_state <= S3;
         	    
         	when S3 =>
         	    if fin_addsub = '1' then
