@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jan 17 11:09:40 2020
-# Process ID: 14440
+# Start of session at: Mon Jan 20 16:29:52 2020
+# Process ID: 13276
 # Current directory: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1/Top.vds
@@ -16,38 +16,43 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13708 
+INFO: Helper process launched with PID 16500 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 734.730 ; gain = 177.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 735.000 ; gain = 177.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:21]
-INFO: [Synth 8-3491] module 'DCM' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:4' bound to instance 'dcmtop' of component 'DCM' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:76]
+INFO: [Synth 8-3491] module 'DCM' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:4' bound to instance 'dcmtop' of component 'DCM' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:30]
 INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_DCM' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:11]
 	Parameter smodule bound to: 50000 - type: integer 
-INFO: [Synth 8-3491] module 'clk_divider' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:7' bound to instance 'cl1k' of component 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:26]
-INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:18]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:6' bound to instance 'cl1k' of component 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:17]
 	Parameter smodule bound to: 50000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:17]
 	Parameter smodule bound to: 50 - type: integer 
-INFO: [Synth 8-3491] module 'clk_divider' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:7' bound to instance 'cl10' of component 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized1' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:18]
+INFO: [Synth 8-3491] module 'clk_divider' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:6' bound to instance 'cl10' of component 'clk_divider' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized1' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:17]
 	Parameter smodule bound to: 50 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized1' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized1' (1#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/clk_divider.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_DCM' (2#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/DCM.vhd:11]
-INFO: [Synth 8-3491] module 'FSM_Big' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:6' bound to instance 'fsmtop' of component 'FSM_Big' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:84]
-INFO: [Synth 8-638] synthesizing module 'FSM_Big' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:20]
-INFO: [Synth 8-3491] module 'FSM_Set' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:7' bound to instance 'setfsm' of component 'FSM_Set' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:49]
+INFO: [Synth 8-3491] module 'Input_edge_generator' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:6' bound to instance 'ieg' of component 'Input_edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'Input_edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:17]
+INFO: [Synth 8-3491] module 'Edge_generator' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Edge_generator.vhd:4' bound to instance 'okreg' of component 'Edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'Edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Edge_generator.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Edge_generator' (3#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Edge_generator.vhd:10]
+INFO: [Synth 8-3491] module 'Edge_generator' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Edge_generator.vhd:4' bound to instance 'okb1' of component 'Edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:27]
+INFO: [Synth 8-3491] module 'Edge_generator' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Edge_generator.vhd:4' bound to instance 'okb2' of component 'Edge_generator' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Input_edge_generator' (4#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Input_edge_generator.vhd:17]
+INFO: [Synth 8-3491] module 'FSM_Big' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:6' bound to instance 'fsmtop' of component 'FSM_Big' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'FSM_Big' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:22]
+INFO: [Synth 8-3491] module 'FSM_Set' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:7' bound to instance 'setfsm' of component 'FSM_Set' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'FSM_Set' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:30]
-INFO: [Synth 8-226] default block is never used [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:70]
-WARNING: [Synth 8-614] signal 'button1_pressed' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:67]
-WARNING: [Synth 8-614] signal 'button2_pressed' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:67]
-WARNING: [Synth 8-614] signal 'ok_pressed' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:67]
-INFO: [Synth 8-226] default block is never used [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:105]
-WARNING: [Synth 8-614] signal 'gamemode_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:103]
-INFO: [Synth 8-256] done synthesizing module 'FSM_Set' (3#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:30]
-INFO: [Synth 8-3491] module 'FSM_AddSub' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:7' bound to instance 'addsubfsm' of component 'FSM_AddSub' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:66]
+INFO: [Synth 8-226] default block is never used [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:61]
+INFO: [Synth 8-226] default block is never used [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:96]
+WARNING: [Synth 8-614] signal 'gamemode_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'FSM_Set' (5#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Set.vhd:30]
+INFO: [Synth 8-3491] module 'FSM_AddSub' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:7' bound to instance 'addsubfsm' of component 'FSM_AddSub' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:68]
 INFO: [Synth 8-638] synthesizing module 'FSM_AddSub' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:30]
-INFO: [Synth 8-3491] module 'Adder_Subs_Sync' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:7' bound to instance 'addsub' of component 'Adder_Subs_Sync' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:49]
+INFO: [Synth 8-3491] module 'Adder_Subs_Sync' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:7' bound to instance 'addsub' of component 'Adder_Subs_Sync' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:48]
 INFO: [Synth 8-638] synthesizing module 'Adder_Subs_Sync' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:20]
 INFO: [Synth 8-3491] module 'adder_time' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:5' bound to instance 'adder' of component 'adder_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:42]
 INFO: [Synth 8-638] synthesizing module 'adder_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:15]
@@ -55,34 +60,33 @@ INFO: [Synth 8-638] synthesizing module 'adder_time' [C:/Users/pablo/Documents/U
 INFO: [Synth 8-3491] module 'adder_integer10' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:7' bound to instance 'addn' of component 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:39]
 INFO: [Synth 8-638] synthesizing module 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
 	Parameter module bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder_integer10' (4#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'adder_integer10' (6#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
 	Parameter module bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'adder_integer10' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:7' bound to instance 'addn' of component 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:39]
 	Parameter module bound to: 6 - type: integer 
 INFO: [Synth 8-3491] module 'adder_integer10' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:7' bound to instance 'addn' of component 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:24]
 INFO: [Synth 8-638] synthesizing module 'adder_integer10__parameterized2' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
 	Parameter module bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'adder_integer10__parameterized2' (4#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'adder_integer10__parameterized2' (6#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:22]
 	Parameter module bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'adder_integer10' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:7' bound to instance 'addn' of component 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:39]
 	Parameter module bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'adder_integer10' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:7' bound to instance 'addn' of component 'adder_integer10' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'adder_time' (5#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'adder_time' (7#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:15]
 INFO: [Synth 8-3491] module 'substracter_time' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd:6' bound to instance 'subs' of component 'substracter_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:51]
 INFO: [Synth 8-638] synthesizing module 'substracter_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd:15]
 INFO: [Synth 8-3491] module 'adder_time' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:5' bound to instance 'restador' of component 'adder_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'substracter_time' (6#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'substracter_time' (8#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/subtracter_time.vhd:15]
 WARNING: [Synth 8-614] signal 'din1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'Adder_Subs_Sync' (7#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:20]
-WARNING: [Synth 8-614] signal 'ok_pressed' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:76]
-WARNING: [Synth 8-614] signal 'gamemode' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:76]
-WARNING: [Synth 8-614] signal 'initial_v_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:112]
-WARNING: [Synth 8-614] signal 'dout_addsub' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:112]
-WARNING: [Synth 8-614] signal 'increment_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:112]
-INFO: [Synth 8-256] done synthesizing module 'FSM_AddSub' (8#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:30]
-INFO: [Synth 8-3491] module 'FSM_Main' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:6' bound to instance 'mainfsm' of component 'FSM_Main' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'FSM_Main' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:24]
-INFO: [Synth 8-3491] module 'big_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:5' bound to instance 'bc1' of component 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Adder_Subs_Sync' (9#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Adder_Subs_Sync.vhd:20]
+WARNING: [Synth 8-614] signal 'gamemode' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:74]
+WARNING: [Synth 8-614] signal 'initial_v_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:110]
+WARNING: [Synth 8-614] signal 'dout_addsub' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:110]
+WARNING: [Synth 8-614] signal 'increment_interno' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'FSM_AddSub' (10#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_AddSub.vhd:30]
+INFO: [Synth 8-3491] module 'FSM_Main' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:6' bound to instance 'mainfsm' of component 'FSM_Main' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'FSM_Main' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:27]
+INFO: [Synth 8-3491] module 'big_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:5' bound to instance 'bc1' of component 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:53]
 INFO: [Synth 8-638] synthesizing module 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:15]
 	Parameter state_num bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntr0' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:18]
@@ -90,7 +94,7 @@ INFO: [Synth 8-638] synthesizing module 'generic_cntr' [C:/Users/pablo/Documents
 	Parameter state_num bound to: 10 - type: integer 
 WARNING: [Synth 8-614] signal 'load_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
 WARNING: [Synth 8-614] signal 'ce_n' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'generic_cntr' (9#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'generic_cntr' (11#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
 	Parameter state_num bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:48]
 	Parameter state_num bound to: 6 - type: integer 
@@ -99,43 +103,50 @@ INFO: [Synth 8-638] synthesizing module 'generic_cntr__parameterized2' [C:/Users
 	Parameter state_num bound to: 6 - type: integer 
 WARNING: [Synth 8-614] signal 'load_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
 WARNING: [Synth 8-614] signal 'ce_n' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'generic_cntr__parameterized2' (9#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'generic_cntr__parameterized2' (11#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:20]
 	Parameter state_num bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:48]
 	Parameter state_num bound to: 10 - type: integer 
 INFO: [Synth 8-3491] module 'generic_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/generic_cntr.vhd:7' bound to instance 'cntrn' of component 'generic_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'big_cntr' (10#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:15]
-INFO: [Synth 8-3491] module 'big_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:5' bound to instance 'bc2' of component 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:49]
-WARNING: [Synth 8-614] signal 'initial_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:112]
-INFO: [Synth 8-256] done synthesizing module 'FSM_Main' (11#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:24]
-INFO: [Synth 8-3491] module 'Decoder_7s_reg' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:6' bound to instance 'dec1' of component 'Decoder_7s_reg' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'big_cntr' (12#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:15]
+INFO: [Synth 8-3491] module 'big_cntr' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/big_cntr.vhd:5' bound to instance 'bc2' of component 'big_cntr' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:65]
+INFO: [Synth 8-3491] module 'adder_time' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:5' bound to instance 'adder1' of component 'adder_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:77]
+INFO: [Synth 8-3491] module 'adder_time' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_cntr.vhd:5' bound to instance 'adder2' of component 'adder_time' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:86]
+WARNING: [Synth 8-614] signal 'gamemode' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:106]
+WARNING: [Synth 8-614] signal 'initial_v' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:190]
+WARNING: [Synth 8-614] signal 'time_interno1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:190]
+WARNING: [Synth 8-614] signal 'time_interno2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:190]
+WARNING: [Synth 8-614] signal 'dout_adder1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:190]
+WARNING: [Synth 8-614] signal 'dout_adder2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:190]
+INFO: [Synth 8-256] done synthesizing module 'FSM_Main' (13#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Main.vhd:27]
+INFO: [Synth 8-3491] module 'Decoder_7s_reg' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:6' bound to instance 'dec1' of component 'Decoder_7s_reg' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'Decoder_7s_reg' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:14]
 INFO: [Synth 8-3491] module 'Decoder_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:6' bound to instance 'decn' of component 'Decoder_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:19]
 INFO: [Synth 8-638] synthesizing module 'Decoder_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:15]
-INFO: [Synth 8-256] done synthesizing module 'Decoder_7s' (12#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_7s' (14#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:15]
 INFO: [Synth 8-3491] module 'Decoder_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:6' bound to instance 'decn' of component 'Decoder_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:19]
 INFO: [Synth 8-3491] module 'Decoder_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:6' bound to instance 'decn' of component 'Decoder_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:19]
 INFO: [Synth 8-3491] module 'Decoder_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder7s.vhd:6' bound to instance 'decn' of component 'Decoder_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:19]
-INFO: [Synth 8-256] done synthesizing module 'Decoder_7s_reg' (13#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:14]
-INFO: [Synth 8-3491] module 'Decoder_7s_reg' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:6' bound to instance 'dec2' of component 'Decoder_7s_reg' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:111]
-WARNING: [Synth 8-614] signal 'time_out_addsub2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'disp_reg_set1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'disp_reg_set2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'disp_reg_addsub1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'dout_dec2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'time_out_main2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-WARNING: [Synth 8-614] signal 'dout_dec1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:163]
-INFO: [Synth 8-256] done synthesizing module 'FSM_Big' (14#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:20]
-INFO: [Synth 8-3491] module 'Mux_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd:9' bound to instance 'muxtop' of component 'Mux_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:97]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_7s_reg' (15#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:14]
+INFO: [Synth 8-3491] module 'Decoder_7s_reg' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Decoder_7s_reg.vhd:6' bound to instance 'dec2' of component 'Decoder_7s_reg' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:116]
+WARNING: [Synth 8-614] signal 'time_out_addsub2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'disp_reg_set1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'disp_reg_set2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'disp_reg_addsub1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'dout_dec2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'time_out_main2' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+WARNING: [Synth 8-614] signal 'dout_dec1' is read in the process but is not in the sensitivity list [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'FSM_Big' (16#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/FSM_Big.vhd:22]
+INFO: [Synth 8-3491] module 'Mux_7s' declared at 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd:9' bound to instance 'muxtop' of component 'Mux_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:71]
 INFO: [Synth 8-638] synthesizing module 'Mux_7s' [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'Mux_7s' (15#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'Top' (16#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Mux_7s' (17#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Mux_7s.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Top' (18#1) [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/Top.vhd:21]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][3]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][2]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][1]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 801.012 ; gain = 243.293
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -148,10 +159,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.012 ; gain = 243.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.570 ; gain = 244.398
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 801.012 ; gain = 243.293
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -163,26 +174,26 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 920.426 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 924.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 920.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 924.184 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:29]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.srcs/sources_1/new/adder_integer10.vhd:29]
@@ -193,6 +204,12 @@ INFO: [Synth 8-5544] ROM "disp_reg[1]" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "disp_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "din_addsub2[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_Main'
+INFO: [Synth 8-5544] ROM "ce_n1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ce_n2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "load2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fin" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_load_v1[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'FSM_Big'
 INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
@@ -208,13 +225,20 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                      s0 |                            00001 |                              000
-                      s1 |                            00010 |                              001
-                     s20 |                            00100 |                              011
-                     s10 |                            01000 |                              010
-                      s3 |                            10000 |                              100
+                      s0 |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                     s20 |                             0010 |                             0011
+                     s21 |                             0011 |                             0101
+                     s22 |                             0100 |                             0111
+                     s23 |                             0101 |                             1001
+                     s10 |                             0110 |                             0010
+                     s11 |                             0111 |                             0100
+                     s12 |                             1000 |                             0110
+                     s13 |                             1001 |                             1000
+                      s3 |                             1010 |                             1010
+                      s4 |                             1011 |                             1011
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'FSM_Main'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_Main'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -227,7 +251,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'FSM_Big'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,25 +266,24 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     16 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
-	   3 Input      5 Bit       Adders := 10    
-	   2 Input      4 Bit       Adders := 25    
+	   3 Input      5 Bit       Adders := 20    
+	   2 Input      4 Bit       Adders := 35    
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               16 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 25    
+	                4 Bit    Registers := 35    
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 7     
+	                1 Bit    Registers := 6     
 +---Muxes : 
 	   4 Input      8 Bit        Muxes := 4     
 	   5 Input      8 Bit        Muxes := 4     
 	   6 Input      8 Bit        Muxes := 8     
 	   8 Input      8 Bit        Muxes := 1     
-	   5 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 60    
+	   2 Input      4 Bit        Muxes := 77    
 	   5 Input      4 Bit        Muxes := 15    
+	  12 Input      4 Bit        Muxes := 11    
 	   6 Input      4 Bit        Muxes := 5     
 	   5 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
@@ -270,7 +293,8 @@ Detailed RTL Component Info :
 	   5 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 30    
 	   4 Input      1 Bit        Muxes := 3     
-	   5 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 7     
+	  12 Input      1 Bit        Muxes := 7     
 	   6 Input      1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -295,11 +319,15 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
+Module Edge_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module FSM_Set 
 Detailed RTL Component Info : 
 +---Registers : 
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input      8 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
@@ -335,7 +363,6 @@ Module FSM_AddSub
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 10    
-	                1 Bit    Registers := 1     
 +---Muxes : 
 	   5 Input      8 Bit        Muxes := 4     
 	   5 Input      4 Bit        Muxes := 15    
@@ -361,11 +388,13 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 3     
 Module FSM_Main 
 Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 10    
 +---Muxes : 
-	   5 Input      5 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 3     
+	  12 Input      4 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 7     
 	   2 Input      1 Bit        Muxes := 3     
-	   5 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 7     
 Module FSM_Big 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -401,9 +430,8 @@ WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][3]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][2]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][1]
 WARNING: [Synth 8-3331] design Decoder_7s_reg has unconnected port time_in[0][0]
-INFO: [Synth 8-3886] merging instance 'fsmtop/setfsm/ok_pressed_reg' (FDP) to 'fsmtop/addsubfsm/ok_pressed_reg'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -415,13 +443,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 920.426 ; gain = 363.254
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 924.184 ; gain = 366.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -433,7 +461,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 937.137 ; gain = 379.965
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 948.691 ; gain = 390.973
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -457,7 +485,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -470,7 +498,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -482,25 +510,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -519,15 +547,15 @@ Report Cell Usage:
 |1     |BUFG   |     3|
 |2     |CARRY4 |    13|
 |3     |LUT1   |    24|
-|4     |LUT2   |    55|
-|5     |LUT3   |    81|
-|6     |LUT4   |    63|
-|7     |LUT5   |   104|
-|8     |LUT6   |   280|
-|9     |MUXF7  |     5|
+|4     |LUT2   |    25|
+|5     |LUT3   |   125|
+|6     |LUT4   |    77|
+|7     |LUT5   |   154|
+|8     |LUT6   |   374|
+|9     |MUXF7  |     6|
 |10    |FDCE   |    72|
-|11    |FDPE   |    64|
-|12    |FDRE   |    68|
+|11    |FDPE   |    60|
+|12    |FDRE   |   111|
 |13    |LDC    |    60|
 |14    |IBUF   |     5|
 |15    |OBUF   |    16|
@@ -537,52 +565,56 @@ Report Instance Areas:
 +------+------------------------------------------------+-------------------------------+------+
 |      |Instance                                        |Module                         |Cells |
 +------+------------------------------------------------+-------------------------------+------+
-|1     |top                                             |                               |   913|
-|2     |  dcmtop                                        |xil_defaultlib_DCM             |    86|
-|3     |    cl10                                        |clk_divider__parameterized1    |    14|
+|1     |top                                             |                               |  1125|
+|2     |  dcmtop                                        |xil_defaultlib_DCM             |    87|
+|3     |    cl10                                        |clk_divider__parameterized1    |    15|
 |4     |    cl1k                                        |clk_divider                    |    72|
-|5     |  fsmtop                                        |FSM_Big                        |   785|
-|6     |    addsubfsm                                   |FSM_AddSub                     |   328|
-|7     |      addsub                                    |Adder_Subs_Sync                |   253|
-|8     |    mainfsm                                     |FSM_Main                       |   429|
-|9     |      bc1                                       |big_cntr                       |   187|
-|10    |        cntr0                                   |generic_cntr_4                 |    26|
-|11    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_5                 |    40|
-|12    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2_6 |    39|
-|13    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_7                 |    44|
-|14    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_8                 |    38|
-|15    |      bc2                                       |big_cntr_0                     |   234|
-|16    |        cntr0                                   |generic_cntr                   |    35|
-|17    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_1                 |    47|
-|18    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2   |    52|
-|19    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_2                 |    49|
-|20    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_3                 |    51|
-|21    |    setfsm                                      |FSM_Set                        |    23|
-|22    |  muxtop                                        |Mux_7s                         |    18|
+|5     |  fsmtop                                        |FSM_Big                        |   990|
+|6     |    addsubfsm                                   |FSM_AddSub                     |   307|
+|7     |      addsub                                    |Adder_Subs_Sync                |   232|
+|8     |    mainfsm                                     |FSM_Main                       |   658|
+|9     |      bc1                                       |big_cntr                       |   286|
+|10    |        cntr0                                   |generic_cntr_6                 |    46|
+|11    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_7                 |    65|
+|12    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2_8 |    59|
+|13    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_9                 |    59|
+|14    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_10                |    57|
+|15    |      bc2                                       |big_cntr_2                     |   310|
+|16    |        cntr0                                   |generic_cntr                   |    51|
+|17    |        \cntr_generate[1].cntrn_generate.cntrn  |generic_cntr_3                 |    70|
+|18    |        \cntr_generate[2].cntr2_generate.cntr2  |generic_cntr__parameterized2   |    63|
+|19    |        \cntr_generate[3].cntrn_generate.cntrn  |generic_cntr_4                 |    62|
+|20    |        \cntr_generate[4].cntrn_generate.cntrn  |generic_cntr_5                 |    64|
+|21    |    setfsm                                      |FSM_Set                        |    21|
+|22    |  ieg                                           |Input_edge_generator           |     6|
+|23    |    okb1                                        |Edge_generator                 |     2|
+|24    |    okb2                                        |Edge_generator_0               |     1|
+|25    |    okreg                                       |Edge_generator_1               |     3|
+|26    |  muxtop                                        |Mux_7s                         |    18|
 +------+------------------------------------------------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:35 . Memory (MB): peak = 942.922 ; gain = 266.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 942.922 ; gain = 385.750
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 953.805 ; gain = 272.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 953.805 ; gain = 396.086
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 945.309 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 970.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 60 instances were transformed.
   LDC => LDCE: 60 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-97 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+112 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 945.309 ; gain = 646.777
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 945.309 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 970.008 ; gain = 671.086
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 970.008 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 11:10:28 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 20 16:30:44 2020...

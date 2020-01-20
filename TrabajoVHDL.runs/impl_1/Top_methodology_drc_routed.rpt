@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Jan 17 11:11:41 2020
+| Date         : Mon Jan 20 16:31:57 2020
 | Host         : DESKTOP-VV8ADDO running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 345
+             Violations found: 424
 +-----------+------------------+------------------------------+------------+
 | Rule      | Severity         | Description                  | Violations |
 +-----------+------------------+------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 204        |
-| LUTAR-1   | Warning          | LUT drives async reset alert | 81         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell  | 243        |
+| LUTAR-1   | Warning          | LUT drives async reset alert | 121        |
 | TIMING-20 | Warning          | Non-clocked latch            | 60         |
 +-----------+------------------+------------------------------+------------+
 
@@ -586,470 +586,665 @@ Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/addsubfsm/ok_pressed_reg/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/FSM_sequential_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/FSM_sequential_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/FSM_onehot_state_reg[1]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/FSM_sequential_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/FSM_onehot_state_reg[2]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/FSM_sequential_state_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/FSM_onehot_state_reg[3]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/FSM_onehot_state_reg[4]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr0/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#141 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#142 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#143 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#151 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#152 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#153 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#154 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#155 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#156 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#157 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#158 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#159 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#160 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#161 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#162 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#163 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#164 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr0/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#165 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#166 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#167 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#168 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#169 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#170 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#171 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#172 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#173 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#174 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#175 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#176 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#177 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#178 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#179 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#180 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#181 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#182 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#183 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#184 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#185 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#186 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#187 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#188 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#189 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#190 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#191 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#192 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#193 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#194 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#195 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[0][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#196 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[0][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#197 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/setfsm/button1_pressed_reg/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[0][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#198 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/setfsm/button2_pressed_reg/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[0][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#199 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/setfsm/gamemode_interno_reg/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[1][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#200 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/setfsm/state_reg[0]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[1][1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#201 Critical Warning
 Non-clocked sequential cell  
-The clock pin fsmtop/setfsm/state_reg[1]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[1][2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#202 Critical Warning
 Non-clocked sequential cell  
-The clock pin muxtop/mux_signal_reg[0]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[1][3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#203 Critical Warning
 Non-clocked sequential cell  
-The clock pin muxtop/mux_signal_reg[1]/C is not reached by a timing clock
+The clock pin fsmtop/mainfsm/load_v1_reg[2][0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#204 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[2][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[2][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[2][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[3][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[3][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[3][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[3][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[4][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[4][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[4][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v1_reg[4][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[0][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[0][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[0][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[0][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[1][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[1][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#221 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[1][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#222 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[1][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#223 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[2][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#224 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[2][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#225 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[2][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#226 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[2][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#227 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[3][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#228 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[3][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#229 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[3][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#230 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[3][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#231 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[4][0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#232 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[4][1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#233 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[4][2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#234 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/mainfsm/load_v2_reg[4][3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#235 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/setfsm/gamemode_interno_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#236 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/setfsm/state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#237 Critical Warning
+Non-clocked sequential cell  
+The clock pin fsmtop/setfsm/state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#238 Critical Warning
+Non-clocked sequential cell  
+The clock pin ieg/okb1/previous_input_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#239 Critical Warning
+Non-clocked sequential cell  
+The clock pin ieg/okb2/previous_input_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#240 Critical Warning
+Non-clocked sequential cell  
+The clock pin ieg/okreg/previous_input_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#241 Critical Warning
+Non-clocked sequential cell  
+The clock pin muxtop/mux_signal_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#242 Critical Warning
+Non-clocked sequential cell  
+The clock pin muxtop/mux_signal_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#243 Critical Warning
 Non-clocked sequential cell  
 The clock pin muxtop/mux_signal_reg[2]/C is not reached by a timing clock
 Related violations: <none>
@@ -1256,207 +1451,407 @@ Related violations: <none>
 
 LUTAR-1#41 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[0]_P/PRE, fsmtop/mainfsm/bc2/cntr0/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[0]_LDC_i_1__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#42 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[0]_LDC/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[0]_LDC_i_2__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#43 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[1]_P/PRE, fsmtop/mainfsm/bc2/cntr0/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[1]_LDC_i_1__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#44 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[1]_LDC/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[1]_LDC_i_2__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#45 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[2]_P/PRE, fsmtop/mainfsm/bc2/cntr0/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[2]_LDC_i_1__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#46 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[2]_LDC/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[2]_LDC_i_2__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#47 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[3]_P/PRE, fsmtop/mainfsm/bc2/cntr0/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[3]_LDC_i_1__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#48 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[3]_LDC/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr0/state_reg[3]_LDC_i_2__8, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr0/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr0/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#49 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#50 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#51 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#52 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#53 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#54 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#55 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#56 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__7, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#57 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_1__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#58 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#59 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_1__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#60 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#61 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_1__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#62 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#63 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_1__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#64 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_2__6, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#65 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#66 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#67 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#68 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#69 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#70 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#71 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#72 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__5, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#73 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#74 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#75 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#76 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#77 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#78 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#79 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/PRE, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#80 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__4, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc1/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#81 Warning
 LUT drives async reset alert  
-LUT cell fsmtop/mainfsm/button2_pressed_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/addsubfsm/FSM_sequential_state_reg[0]/CLR, fsmtop/addsubfsm/FSM_sequential_state_reg[1]/CLR, fsmtop/addsubfsm/FSM_sequential_state_reg[2]/CLR, fsmtop/addsubfsm/ok_pressed_reg/PRE, fsmtop/setfsm/state_reg[0]/CLR, fsmtop/setfsm/state_reg[1]/CLR, fsmtop/setfsm/button1_pressed_reg/PRE, fsmtop/setfsm/button2_pressed_reg/PRE, fsmtop/mainfsm/FSM_onehot_state_reg[1]/CLR, fsmtop/mainfsm/FSM_onehot_state_reg[2]/CLR, fsmtop/mainfsm/FSM_onehot_state_reg[3]/CLR, fsmtop/mainfsm/FSM_onehot_state_reg[4]/CLR, fsmtop/mainfsm/FSM_onehot_state_reg[0]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#82 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#83 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#84 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#85 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#86 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#87 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC_i_1__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#88 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC_i_2__3, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr0/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr0/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#89 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#90 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#91 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#92 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#93 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#94 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#95 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#96 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[1].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#97 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#98 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#99 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#100 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#101 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#102 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#103 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_1__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#104 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC_i_2__1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[2].cntr2_generate.cntr2/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#105 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#106 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#107 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#108 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#109 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#110 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#111 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_1__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#112 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC_i_2__0, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[3].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#113 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#114 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[0]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#115 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#116 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[1]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#117 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#118 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[2]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#119 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_P/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#120 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_C/CLR, fsmtop/mainfsm/bc2/cntr_generate[4].cntrn_generate.cntrn/state_reg[3]_LDC/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#121 Warning
+LUT drives async reset alert  
+LUT cell fsmtop/mainfsm/state[1]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) fsmtop/addsubfsm/FSM_sequential_state_reg[0]/CLR, fsmtop/addsubfsm/FSM_sequential_state_reg[1]/CLR, fsmtop/addsubfsm/FSM_sequential_state_reg[2]/CLR, fsmtop/setfsm/state_reg[0]/CLR, fsmtop/setfsm/state_reg[1]/CLR, fsmtop/mainfsm/FSM_sequential_state_reg[0]/CLR, fsmtop/mainfsm/FSM_sequential_state_reg[1]/CLR, fsmtop/mainfsm/FSM_sequential_state_reg[2]/CLR, fsmtop/mainfsm/FSM_sequential_state_reg[3]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 TIMING-20#1 Warning

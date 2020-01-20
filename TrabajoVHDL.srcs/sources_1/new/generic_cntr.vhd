@@ -1,6 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use work.Paco.all;
+use work.MiPack.all;
 
 
 
@@ -26,7 +26,7 @@ begin
     state_reg: process(clk, load)
     begin
         if load = '1' then
-            state <= load_v;
+                state <= load_v;
         elsif rising_edge(clk) and ce_n = '0' then
             state <= next_state;
         end if;

@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-use work.Paco.all;
+use work.MiPack.all;
 
 
 entity Adder_Subs_Sync is

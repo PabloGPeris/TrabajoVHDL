@@ -1,6 +1,6 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_Big_tb1_behav xil_defaultlib.FSM_Big_tb1 -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e456db25c4d341918ff3b08ae520b38a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_Main_tb_v2_behav xil_defaultlib.FSM_Main_tb_v2 -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -10,20 +10,13 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package xil_defaultlib.paco
-Compiling architecture behavioral of entity xil_defaultlib.FSM_Set [fsm_set_default]
-Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [adder_integer10_default]
-Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [\adder_integer10(module=6)\]
-Compiling architecture structural of entity xil_defaultlib.adder_time [adder_time_default]
-Compiling architecture behavioral of entity xil_defaultlib.substracter_time [substracter_time_default]
-Compiling architecture behavioral of entity xil_defaultlib.Adder_Subs_Sync [adder_subs_sync_default]
-Compiling architecture behavioral of entity xil_defaultlib.FSM_AddSub [fsm_addsub_default]
+Compiling package xil_defaultlib.mipack
 Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [\generic_cntr(state_num=6)\]
 Compiling architecture behavioral of entity xil_defaultlib.generic_cntr [generic_cntr_default]
 Compiling architecture behavioral of entity xil_defaultlib.big_cntr [big_cntr_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [adder_integer10_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_integer10 [\adder_integer10(module=6)\]
+Compiling architecture structural of entity xil_defaultlib.adder_time [adder_time_default]
 Compiling architecture behavioral of entity xil_defaultlib.FSM_Main [fsm_main_default]
-Compiling architecture dataflow of entity xil_defaultlib.Decoder_7s [decoder_7s_default]
-Compiling architecture structural of entity xil_defaultlib.Decoder_7s_reg [decoder_7s_reg_default]
-Compiling architecture behavioral of entity xil_defaultlib.FSM_Big [fsm_big_default]
-Compiling architecture behavioral of entity xil_defaultlib.fsm_big_tb1
-Built simulation snapshot FSM_Big_tb1_behav
+Compiling architecture behavioral of entity xil_defaultlib.fsm_main_tb_v2
+Built simulation snapshot FSM_Main_tb_v2_behav
