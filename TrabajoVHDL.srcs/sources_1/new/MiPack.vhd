@@ -128,7 +128,8 @@ package mipack is
         din1: in tiempo_t;
         din2: in tiempo_t;
         
-        dout: out tiempo_t;
+        dout: out tiempo_t;  
+        ov: out std_logic;
         complement: in std_logic:= '0' --poner a 1 para indicar que el
         --primer carry out es 1, necesario si el sin2 es complemento (a 9)
         --para poder hacer la resta

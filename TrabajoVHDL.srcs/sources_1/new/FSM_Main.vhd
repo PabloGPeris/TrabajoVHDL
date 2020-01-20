@@ -36,6 +36,7 @@ architecture Behavioral of FSM_Main is
     --cosas de los temporizadores principales
     signal ce_n1, ce_n2: std_logic;
     signal load1, load2: std_logic;
+    signal nxt_load1, nxt_load2: std_logic;
     signal load_v1, load_v2: tiempo_t;
     signal nxt_load_v1, nxt_load_v2: tiempo_t;
     signal rdy1, rdy2: std_logic;
@@ -43,12 +44,15 @@ architecture Behavioral of FSM_Main is
     --cosas de incrementos
     --signal din_adder1: tiempo_t;
     signal dout_adder1, dout_adder2: tiempo_t;
+    signal ov_adder1, ov_adder2, ov_adder1_n, ov_adder2_n: std_logic;
     
     
 begin
 
     time_out1 <= time_interno1;
     time_out2 <= time_interno2;
+    ov_adder1_n <= not ov_adder1;
+    ov_adder2_n <= not ov_adder2;
 
     bc1: big_cntr
     Port Map(
@@ -80,6 +84,7 @@ begin
         din2 => increment,
         
         dout => dout_adder1,
+        ov => ov_adder1,
         complement => '0'
     );
     
@@ -89,6 +94,7 @@ begin
         din2 => increment,
         
         dout => dout_adder2,
+        ov => ov_adder2,
         complement => '0'
     );
     
@@ -100,6 +106,8 @@ begin
         	state <= nxt_state;
         	load_v1 <= nxt_load_v1;
         	load_v2 <= nxt_load_v2;
+        	load1 <= nxt_load1;
+        	load2 <= nxt_load2;
         end if;
     end process;
     
@@ -195,8 +203,8 @@ begin
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
                 nxt_load_v1 <= initial_v;
                 nxt_load_v2 <= initial_v;
@@ -207,8 +215,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '1';
-                load2 <= '1';
+                nxt_load1 <= '1';
+                nxt_load2 <= '1';
                 
 
                 nxt_load_v1 <= initial_v;
@@ -222,8 +230,9 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= ov_adder1_n;
+                nxt_load2 <= '0';
+
                 
 
                 nxt_load_v1 <= time_interno1;
@@ -236,8 +245,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '1';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
 
                 nxt_load_v1 <= dout_adder1;
@@ -250,8 +259,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
 
                 nxt_load_v1 <= dout_adder1;
@@ -264,8 +273,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= ov_adder2_n;
                 
 
                 nxt_load_v1 <= time_interno1;
@@ -277,9 +286,9 @@ begin
             when S21 =>
             	fin <= '0';
                 ce_n1 <= '1';
-                ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '1';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
+
                 
 
                 nxt_load_v1 <= time_interno1;
@@ -292,8 +301,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
 
                 nxt_load_v1 <= time_interno1;
@@ -308,8 +317,8 @@ begin
             	fin <= '0';
                 ce_n1 <= '0';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
                 nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= time_interno2;   
@@ -320,8 +329,8 @@ begin
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '0';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
                 
                 nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= time_interno2;
@@ -333,8 +342,8 @@ begin
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
 
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2;     
@@ -345,8 +354,8 @@ begin
                 fin <= '1';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
 
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2;  
@@ -357,8 +366,8 @@ begin
                 fin <= '0';
                 ce_n1 <= '1';
                 ce_n2 <= '1';
-                load1 <= '0';
-                load2 <= '0';
+                nxt_load1 <= '0';
+                nxt_load2 <= '0';
 
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2; 

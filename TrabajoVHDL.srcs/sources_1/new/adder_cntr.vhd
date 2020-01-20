@@ -8,6 +8,7 @@ entity adder_time is
         din2: in tiempo_t;
         
         dout: out tiempo_t;
+        ov: out std_logic;
         complement: in std_logic:= '0' --poner a 1 para que haga el complemento a 10 (¿?)
     );
 end adder_time;
@@ -16,6 +17,7 @@ architecture structural of adder_time is
     signal cin: std_logic_vector(5 downto 0);
 begin
     cin(0) <= complement;
+    ov <= complement xor cin(5);
     
     add_generate: 
     for i in 0 to 4 generate
