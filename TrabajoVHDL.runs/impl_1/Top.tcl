@@ -66,6 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 1
+  set_param xicom.use_bs_reader 1
   open_checkpoint Top_routed.dcp
   set_property webtalk.parent_dir {C:/Users/pablo/Documents/UNIVERSIDAD/Semestre 7/Sistemas Electronicos Digitales/TrabajoVHDL/TrabajoVHDL/TrabajoVHDL.cache/wt} [current_project]
   catch { write_mem_info -force Top.mmi }

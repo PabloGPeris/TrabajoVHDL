@@ -41,7 +41,8 @@ architecture Behavioral of FSM_Main is
     signal rdy1, rdy2: std_logic;
     
     --cosas de incrementos
-    signal din_adder1, dout_adder1: tiempo_t;
+    --signal din_adder1: tiempo_t;
+    signal dout_adder1, dout_adder2: tiempo_t;
     
     
 begin
@@ -73,15 +74,23 @@ begin
     
     );
     
-    adder: adder_time
+    adder1: adder_time
     Port map( 
-        din1 => din_adder1,
+        din1 => time_interno1,
         din2 => increment,
         
         dout => dout_adder1,
         complement => '0'
     );
     
+    adder2: adder_time
+    Port map( 
+        din1 => time_interno2,
+        din2 => increment,
+        
+        dout => dout_adder2,
+        complement => '0'
+    );
     
 	state_reg: process (reset, clk1k)
     begin
@@ -192,7 +201,7 @@ begin
                 nxt_load_v1 <= initial_v;
                 nxt_load_v2 <= initial_v;
                 
-                din_adder1 <= initial_v;
+                --din_adder1 <= initial_v;
                 
             when S1=>
             	fin <= '0';
@@ -206,7 +215,7 @@ begin
                 nxt_load_v2 <= initial_v;
 
                 
-                din_adder1 <= initial_v;
+                --din_adder1 <= initial_v;
                 
             --estados cuando hay incremento (gamemode = Inc)            
             when S10 =>
@@ -221,7 +230,7 @@ begin
                 nxt_load_v2 <= time_interno2;
 
                 
-                din_adder1 <= time_interno1;
+                --din_adder1 <= time_interno1;
                 
             when S11 =>
             	fin <= '0';
@@ -235,7 +244,7 @@ begin
                 nxt_load_v2 <= time_interno2;
 
                 
-                din_adder1 <= time_interno1;           
+                --din_adder1 <= time_interno1;           
                 
             when S12 =>
             	fin <= '0';
@@ -249,7 +258,7 @@ begin
                 nxt_load_v2 <= time_interno2;
 
                 
-                din_adder1 <= time_interno1;
+                --din_adder1 <= time_interno1;
                 
            when S20 =>
             	fin <= '0';
@@ -263,7 +272,7 @@ begin
                 nxt_load_v2 <= time_interno2;
 
                 
-                din_adder1 <= time_interno2;
+                --din_adder1 <= time_interno2;
                 
             when S21 =>
             	fin <= '0';
@@ -274,10 +283,10 @@ begin
                 
 
                 nxt_load_v1 <= time_interno1;
-                nxt_load_v2 <= dout_adder1;
+                nxt_load_v2 <= dout_adder2;
 
                 
-                din_adder1 <= time_interno2;          
+                --din_adder1 <= time_interno2;          
                 
             when S22 =>
             	fin <= '0';
@@ -288,10 +297,10 @@ begin
                 
 
                 nxt_load_v1 <= time_interno1;
-                nxt_load_v2 <= dout_adder1;
+                nxt_load_v2 <= dout_adder2;
 
                 
-                din_adder1 <= time_interno2;           
+                --din_adder1 <= time_interno2;           
             
             --estados generales comunes (cuenta atrás)    
                              
@@ -305,7 +314,7 @@ begin
                 nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= time_interno2;   
                 
-                din_adder1 <= initial_v;
+                --din_adder1 <= time_interno2;
                           
             when S23 =>
                 fin <= '0';
@@ -317,7 +326,7 @@ begin
                 nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= time_interno2;
                   
-                din_adder1 <= initial_v;   
+                --din_adder1 <= time_interno1;   
                 
             --estados finales                           
             when S3 =>
@@ -330,7 +339,7 @@ begin
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2;     
                 
-                din_adder1 <= initial_v;
+                --din_adder1 <= initial_v;
                 
             when S4 =>
                 fin <= '1';
@@ -342,7 +351,7 @@ begin
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2;  
                 
-                din_adder1 <= initial_v;    
+                --din_adder1 <= initial_v;    
                                       
             when others =>
                 fin <= '0';
@@ -354,7 +363,7 @@ begin
                 nxt_load_v1 <= load_v1;
                 nxt_load_v2 <= load_v2; 
                 
-                din_adder1 <= initial_v;                               
+                --din_adder1 <= initial_v;                               
         end case;
     end process;
 
