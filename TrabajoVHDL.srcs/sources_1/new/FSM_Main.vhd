@@ -217,7 +217,7 @@ begin
                 load2 <= '0';
                 
 
-                nxt_load_v1 <= dout_adder1;
+                nxt_load_v1 <= time_interno1;
                 nxt_load_v2 <= time_interno2;
 
                 
@@ -260,7 +260,7 @@ begin
                 
 
                 nxt_load_v1 <= time_interno1;
-                nxt_load_v2 <= dout_adder1;
+                nxt_load_v2 <= time_interno2;
 
                 
                 din_adder1 <= time_interno2;
