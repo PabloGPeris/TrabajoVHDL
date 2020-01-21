@@ -155,10 +155,10 @@ begin
                 if rdy1 = '1' then
                     nxt_state <= S3;
             	elsif button1 = '1' then
-                    if gamemode = Sin then
-                        nxt_state <= S23;
-                    else --inc
+                    if gamemode = Inc then
                         nxt_state <= S20;
+                    else --Sin
+                        nxt_state <= S23;
                     end if;
                 end if;
                 
@@ -166,10 +166,10 @@ begin
                 if rdy2 = '1' then
                     nxt_state <= S3;
             	elsif button2 = '1' then
-            	    if gamemode = Sin then
-                        nxt_state <= S13;
-                    else --inc
+            	    if gamemode = Inc then
                         nxt_state <= S10;
+                    else --Sin
+                        nxt_state <= S13;
                     end if;
                 end if;
             
