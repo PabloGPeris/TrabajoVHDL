@@ -232,7 +232,6 @@ begin
                 ce_n2 <= '1';
                 nxt_load1 <= ov_adder1_n;
                 nxt_load2 <= '0';
-
                 
 
                 nxt_load_v1 <= time_interno1;
@@ -286,6 +285,7 @@ begin
             when S21 =>
             	fin <= '0';
                 ce_n1 <= '1';
+                ce_n2 <= '1';
                 nxt_load1 <= '0';
                 nxt_load2 <= '0';
 
